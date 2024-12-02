@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target dynorb[0m
+[  3%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/System.cc.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/Tracking.cc.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/LocalMapping.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/LoopClosing.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/FrameDrawer.cc.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/Optimizer.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/Frame.cc.o[0m

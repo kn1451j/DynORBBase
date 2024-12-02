@@ -1,0 +1,29 @@
+running develop
+Removing /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam-tracking.egg-link (link to .)
+running egg_info
+writing ../build/sam_tracking/sam_tracking.egg-info/PKG-INFO
+writing dependency_links to ../build/sam_tracking/sam_tracking.egg-info/dependency_links.txt
+writing entry points to ../build/sam_tracking/sam_tracking.egg-info/entry_points.txt
+writing requirements to ../build/sam_tracking/sam_tracking.egg-info/requires.txt
+writing top-level names to ../build/sam_tracking/sam_tracking.egg-info/top_level.txt
+reading manifest file '../build/sam_tracking/sam_tracking.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/sam_tracking/sam_tracking.egg-info/SOURCES.txt'
+running build
+running build_py
+copying sam_tracking/tracker.py -> /home/parallels/DynORBBase/src/build/sam_tracking/build/lib/sam_tracking
+running install
+running install_lib
+creating /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking
+copying /home/parallels/DynORBBase/src/build/sam_tracking/build/lib/sam_tracking/tracker.py -> /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking
+copying /home/parallels/DynORBBase/src/build/sam_tracking/build/lib/sam_tracking/__init__.py -> /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking
+byte-compiling /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking/tracker.py to tracker.cpython-310.pyc
+byte-compiling /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/sam_tracking -> /home/parallels/DynORBBase/src/install/sam_tracking/share/ament_index/resource_index/packages
+copying package.xml -> /home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking
+running install_egg_info
+Copying ../build/sam_tracking/sam_tracking.egg-info to /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking-0.0.0-py3.10.egg-info
+running install_scripts
+Installing tracker script to /home/parallels/DynORBBase/src/install/sam_tracking/lib/sam_tracking
+writing list of installed files to '/home/parallels/DynORBBase/src/build/sam_tracking/install.log'

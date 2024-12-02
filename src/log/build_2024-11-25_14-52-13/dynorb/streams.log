@@ -1,0 +1,23 @@
+[0.026s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+[0.153s] [  3%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/System.cc.o[0m
+[0.156s] [  6%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/Tracking.cc.o[0m
+[1.238s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:38[m[K,
+[1.238s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23[m[K:
+[1.238s] [01m[K/home/parallels/DynORBBase/src/dynorb/include/DynamObjTracker.h:5:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[1.238s]     5 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[1.238s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.238s] compilation terminated.
+[1.257s] gmake[2]: *** [CMakeFiles/dynorb.dir/build.make:76: CMakeFiles/dynorb.dir/src/System.cc.o] Error 1
+[1.257s] gmake[2]: *** Waiting for unfinished jobs....
+[1.289s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:38[m[K,
+[1.289s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:28[m[K,
+[1.290s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[1.290s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Tracking.cc:22[m[K:
+[1.290s] [01m[K/home/parallels/DynORBBase/src/dynorb/include/DynamObjTracker.h:5:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[1.290s]     5 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[1.290s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.290s] compilation terminated.
+[1.290s] gmake[2]: *** [CMakeFiles/dynorb.dir/build.make:90: CMakeFiles/dynorb.dir/src/Tracking.cc.o] Error 1
+[1.290s] gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/dynorb.dir/all] Error 2
+[1.290s] gmake: *** [Makefile:146: all] Error 2
+[1.296s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2

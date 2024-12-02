@@ -1,0 +1,4 @@
+Invoking command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2': /usr/bin/cmake /home/parallels/DynORBBase/src/DynORB -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/ORB_SLAM2
+Invoked command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2' returned '0': /usr/bin/cmake /home/parallels/DynORBBase/src/DynORB -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/ORB_SLAM2
+Invoking command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2': /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/ORB_SLAM2 -- -j2 -l2
+Invoked command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2' returned '0': /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/ORB_SLAM2 -- -j2 -l2

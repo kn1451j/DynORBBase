@@ -1,0 +1,301 @@
+[0.000000] (-) TimerEvent: {}
+[0.000371] (-) JobUnselected: {'identifier': 'ORB_SLAM2'}
+[0.000400] (-) JobUnselected: {'identifier': 'sam_tracking'}
+[0.000414] (dynorb_interface) JobQueued: {'identifier': 'dynorb_interface', 'dependencies': OrderedDict()}
+[0.000428] (dynorb_interface) JobStarted: {'identifier': 'dynorb_interface'}
+[0.004665] (dynorb_interface) JobProgress: {'identifier': 'dynorb_interface', 'progress': 'cmake'}
+[0.005476] (dynorb_interface) JobProgress: {'identifier': 'dynorb_interface', 'progress': 'build'}
+[0.005505] (dynorb_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/DynORBBase/src/build/dynorb_interface', '--', '-j2', '-l2'], 'cwd': '/home/parallels/DynORBBase/src/build/dynorb_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels/DynORBBase/src/sam_tracking'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1968'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/1946,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/1946'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/88d18826_03a9_4670_a6b1_63c06f28c3cc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ECDVX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/DynORBBase/src/build/dynorb_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.023654] (dynorb_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099584] (-) TimerEvent: {}
+[0.108308] (dynorb_interface) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.130252] (dynorb_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.132271] (dynorb_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.137539] (dynorb_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.145888] (dynorb_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.156527] (dynorb_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.200388] (-) TimerEvent: {}
+[0.203642] (dynorb_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.300587] (-) TimerEvent: {}
+[0.402310] (-) TimerEvent: {}
+[0.429793] (dynorb_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.502915] (-) TimerEvent: {}
+[0.603166] (-) TimerEvent: {}
+[0.703546] (-) TimerEvent: {}
+[0.795888] (dynorb_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.804480] (-) TimerEvent: {}
+[0.904956] (-) TimerEvent: {}
+[0.939735] (dynorb_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.957398] (dynorb_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.973116] (dynorb_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.973263] (dynorb_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.973328] (dynorb_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[1.005033] (-) TimerEvent: {}
+[1.017596] (dynorb_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.024213] (dynorb_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.024944] (dynorb_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.026100] (dynorb_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.054723] (dynorb_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[1.057012] (dynorb_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/parallels/DynORBBase/src/build/dynorb_interface\n'}
+[1.083577] (dynorb_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.083705] (dynorb_interface) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.105120] (-) TimerEvent: {}
+[1.205508] (-) TimerEvent: {}
+[1.305860] (-) TimerEvent: {}
+[1.326607] (dynorb_interface) StdoutLine: {'line': b'[  5%] Built target dynorb_interface__cpp\n'}
+[1.341743] (dynorb_interface) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_dynorb_interface\n'}
+[1.348968] (dynorb_interface) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.363608] (dynorb_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynorb_interface__rosidl_generator_c\x1b[0m\n'}
+[1.376515] (dynorb_interface) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_generator_c.dir/rosidl_generator_c/dynorb_interface/srv/detail/dyn_class__functions.c.o\x1b[0m\n'}
+[1.405956] (-) TimerEvent: {}
+[1.420628] (dynorb_interface) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_generator_c.dir/rosidl_generator_c/dynorb_interface/srv/detail/feed_frame__functions.c.o\x1b[0m\n'}
+[1.464271] (dynorb_interface) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libdynorb_interface__rosidl_generator_c.so\x1b[0m\n'}
+[1.490838] (dynorb_interface) StdoutLine: {'line': b'[ 15%] Built target dynorb_interface__rosidl_generator_c\n'}
+[1.497584] (dynorb_interface) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.506035] (-) TimerEvent: {}
+[1.543353] (dynorb_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynorb_interface__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.550091] (dynorb_interface) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynorb_interface/srv/dyn_class__type_support.cpp.o\x1b[0m\n'}
+[1.606131] (-) TimerEvent: {}
+[1.706474] (-) TimerEvent: {}
+[1.719743] (dynorb_interface) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynorb_interface/srv/feed_frame__type_support.cpp.o\x1b[0m\n'}
+[1.739710] (dynorb_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynorb_interface__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.749734] (dynorb_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp.o\x1b[0m\n'}
+[1.806586] (-) TimerEvent: {}
+[1.891031] (dynorb_interface) StdoutLine: {'line': b'[ 28%] \x1b[32m\x1b[1mLinking CXX shared library libdynorb_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.906688] (-) TimerEvent: {}
+[1.919931] (dynorb_interface) StdoutLine: {'line': b'[ 28%] Built target dynorb_interface__rosidl_typesupport_cpp\n'}
+[1.925930] (dynorb_interface) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.006796] (-) TimerEvent: {}
+[2.008449] (dynorb_interface) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/feed_frame__type_support.cpp.o\x1b[0m\n'}
+[2.106894] (-) TimerEvent: {}
+[2.148935] (dynorb_interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynorb_interface/srv/detail/dyn_class__type_support.c.o\x1b[0m\n'}
+[2.179826] (dynorb_interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynorb_interface/srv/detail/feed_frame__type_support.c.o\x1b[0m\n'}
+[2.207007] (-) TimerEvent: {}
+[2.211683] (dynorb_interface) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C shared library libdynorb_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.234544] (dynorb_interface) StdoutLine: {'line': b'[ 41%] Built target dynorb_interface__rosidl_typesupport_introspection_c\n'}
+[2.239007] (dynorb_interface) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.277654] (dynorb_interface) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libdynorb_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.307127] (-) TimerEvent: {}
+[2.331744] (dynorb_interface) StdoutLine: {'line': b'[ 46%] Built target dynorb_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[2.348876] (dynorb_interface) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.407232] (-) TimerEvent: {}
+[2.426142] (dynorb_interface) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynorb_interface/srv/dyn_class__type_support.cpp.o\x1b[0m\n'}
+[2.455668] (dynorb_interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynorb_interface/srv/feed_frame__type_support.cpp.o\x1b[0m\n'}
+[2.479112] (dynorb_interface) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libdynorb_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.504941] (dynorb_interface) StdoutLine: {'line': b'[ 56%] Built target dynorb_interface__rosidl_typesupport_c\n'}
+[2.507297] (-) TimerEvent: {}
+[2.569191] (dynorb_interface) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynorb_interface/srv/detail/dyn_class__type_support.cpp.o\x1b[0m\n'}
+[2.607396] (-) TimerEvent: {}
+[2.672527] (dynorb_interface) StdoutLine: {'line': b'running egg_info\n'}
+[2.673029] (dynorb_interface) StdoutLine: {'line': b'creating dynorb_interface.egg-info\n'}
+[2.673416] (dynorb_interface) StdoutLine: {'line': b'writing dynorb_interface.egg-info/PKG-INFO\n'}
+[2.673758] (dynorb_interface) StdoutLine: {'line': b'writing dependency_links to dynorb_interface.egg-info/dependency_links.txt\n'}
+[2.674099] (dynorb_interface) StdoutLine: {'line': b'writing top-level names to dynorb_interface.egg-info/top_level.txt\n'}
+[2.674419] (dynorb_interface) StdoutLine: {'line': b"writing manifest file 'dynorb_interface.egg-info/SOURCES.txt'\n"}
+[2.674750] (dynorb_interface) StdoutLine: {'line': b"reading manifest file 'dynorb_interface.egg-info/SOURCES.txt'\n"}
+[2.675075] (dynorb_interface) StdoutLine: {'line': b"writing manifest file 'dynorb_interface.egg-info/SOURCES.txt'\n"}
+[2.691947] (dynorb_interface) StdoutLine: {'line': b'[ 58%] Built target ament_cmake_python_build_dynorb_interface_egg\n'}
+[2.698035] (dynorb_interface) StdoutLine: {'line': b'[ 61%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.707497] (-) TimerEvent: {}
+[2.807872] (-) TimerEvent: {}
+[2.827977] (dynorb_interface) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynorb_interface/srv/detail/feed_frame__type_support.cpp.o\x1b[0m\n'}
+[2.907984] (-) TimerEvent: {}
+[2.922627] (dynorb_interface) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynorb_interface/srv/detail/dyn_class__type_support_c.cpp.o\x1b[0m\n'}
+[3.008095] (-) TimerEvent: {}
+[3.088917] (dynorb_interface) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libdynorb_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.108207] (-) TimerEvent: {}
+[3.139307] (dynorb_interface) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/dynorb_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynorb_interface/srv/detail/feed_frame__type_support_c.cpp.o\x1b[0m\n'}
+[3.142547] (dynorb_interface) StdoutLine: {'line': b'[ 71%] Built target dynorb_interface__rosidl_typesupport_introspection_cpp\n'}
+[3.208310] (-) TimerEvent: {}
+[3.308949] (-) TimerEvent: {}
+[3.353784] (dynorb_interface) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libdynorb_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.400129] (dynorb_interface) StdoutLine: {'line': b'[ 74%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c\n'}
+[3.409079] (-) TimerEvent: {}
+[3.410276] (dynorb_interface) StdoutLine: {'line': b'[ 74%] Built target dynorb_interface\n'}
+[3.421160] (dynorb_interface) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.509607] (-) TimerEvent: {}
+[3.610557] (-) TimerEvent: {}
+[3.711403] (-) TimerEvent: {}
+[3.766433] (dynorb_interface) StdoutLine: {'line': b'[ 76%] Built target dynorb_interface__py\n'}
+[3.778986] (dynorb_interface) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_generator_py.dir/rosidl_generator_py/dynorb_interface/srv/_dyn_class_s.c.o\x1b[0m\n'}
+[3.779855] (dynorb_interface) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_generator_py.dir/rosidl_generator_py/dynorb_interface/srv/_feed_frame_s.c.o\x1b[0m\n'}
+[3.811518] (-) TimerEvent: {}
+[3.874758] (dynorb_interface) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynorb_interface/libdynorb_interface__rosidl_generator_py.so\x1b[0m\n'}
+[3.902825] (dynorb_interface) StdoutLine: {'line': b'[ 84%] Built target dynorb_interface__rosidl_generator_py\n'}
+[3.911616] (-) TimerEvent: {}
+[3.917248] (dynorb_interface) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.917791] (dynorb_interface) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.995584] (dynorb_interface) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynorb_interface/dynorb_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[3.995943] (dynorb_interface) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynorb_interface/dynorb_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[4.011709] (-) TimerEvent: {}
+[4.022540] (dynorb_interface) StdoutLine: {'line': b'[ 94%] Built target dynorb_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[4.023088] (dynorb_interface) StdoutLine: {'line': b'[ 94%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.033370] (dynorb_interface) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/dynorb_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.108460] (dynorb_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynorb_interface/dynorb_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[4.111858] (-) TimerEvent: {}
+[4.133915] (dynorb_interface) StdoutLine: {'line': b'[100%] Built target dynorb_interface__rosidl_typesupport_c__pyext\n'}
+[4.141589] (dynorb_interface) CommandEnded: {'returncode': 0}
+[4.182837] (dynorb_interface) JobProgress: {'identifier': 'dynorb_interface', 'progress': 'install'}
+[4.188752] (dynorb_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/parallels/DynORBBase/src/build/dynorb_interface'], 'cwd': '/home/parallels/DynORBBase/src/build/dynorb_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels/DynORBBase/src/sam_tracking'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1968'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/1946,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/1946'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/88d18826_03a9_4670_a6b1_63c06f28c3cc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ECDVX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/DynORBBase/src/build/dynorb_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.193401] (dynorb_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.193874] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/ament_index/resource_index/rosidl_interfaces/dynorb_interface\n'}
+[4.194235] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface\n'}
+[4.194622] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg\n'}
+[4.195394] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.195433] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv\n'}
+[4.195483] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail\n'}
+[4.195519] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__functions.c\n'}
+[4.195553] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__type_support.h\n'}
+[4.195586] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__functions.h\n'}
+[4.195620] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__functions.h\n'}
+[4.195653] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__struct.h\n'}
+[4.195687] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__type_support.h\n'}
+[4.195721] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__struct.h\n'}
+[4.195754] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__functions.c\n'}
+[4.195787] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/dyn_class.h\n'}
+[4.195827] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/feed_frame.h\n'}
+[4.195860] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/library_path.sh\n'}
+[4.195894] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/library_path.dsv\n'}
+[4.195927] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_generator_c.so\n'}
+[4.195960] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_generator_c.so" to ""\n'}
+[4.195993] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface\n'}
+[4.196026] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg\n'}
+[4.196059] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.196093] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv\n'}
+[4.196131] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail\n'}
+[4.196164] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__rosidl_typesupport_fastrtps_c.h\n'}
+[4.196197] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_fastrtps_c.h\n'}
+[4.196238] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[4.199642] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.199698] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface\n'}
+[4.199736] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv\n'}
+[4.199770] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail\n'}
+[4.199804] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__traits.hpp\n'}
+[4.199837] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__struct.hpp\n'}
+[4.199870] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__traits.hpp\n'}
+[4.199904] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__builder.hpp\n'}
+[4.199937] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__builder.hpp\n'}
+[4.199972] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__struct.hpp\n'}
+[4.200005] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/dyn_class.hpp\n'}
+[4.200039] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/feed_frame.hpp\n'}
+[4.200072] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface\n'}
+[4.200105] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg\n'}
+[4.200138] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.200172] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv\n'}
+[4.200210] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail\n'}
+[4.200246] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dds_fastrtps\n'}
+[4.200280] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.200313] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.200347] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.200380] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.200413] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface\n'}
+[4.200446] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg\n'}
+[4.200479] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.200512] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv\n'}
+[4.200545] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail\n'}
+[4.200578] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_introspection_c.h\n'}
+[4.200611] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__rosidl_typesupport_introspection_c.h\n'}
+[4.200651] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__type_support.c\n'}
+[4.200685] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__type_support.c\n'}
+[4.200718] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_introspection_c.so\n'}
+[4.200752] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.200785] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_c.so\n'}
+[4.200818] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_c.so" to ""\n'}
+[4.200851] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface\n'}
+[4.200884] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv\n'}
+[4.200916] (dynorb_interface) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail\n'}
+[4.200952] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__type_support.cpp\n'}
+[4.200985] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.201019] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__type_support.cpp\n'}
+[4.201052] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.201085] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[4.201120] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.201153] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_cpp.so\n'}
+[4.201187] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[4.201219] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/pythonpath.sh\n'}
+[4.201342] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/pythonpath.dsv\n'}
+[4.201473] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info\n'}
+[4.201674] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.201807] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.201924] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.202039] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.202178] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface\n'}
+[4.202288] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.202429] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.202566] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.202734] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.202912] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.203048] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/__init__.py\n'}
+[4.203159] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/libdynorb_interface__rosidl_generator_py.so\n'}
+[4.203333] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv\n'}
+[4.203513] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_feed_frame.py\n'}
+[4.203690] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_dyn_class_s.c\n'}
+[4.203815] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_feed_frame_s.c\n'}
+[4.203935] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/__init__.py\n'}
+[4.204053] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_dyn_class.py\n'}
+[4.204175] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_c.c\n'}
+[4.211933] (-) TimerEvent: {}
+[4.228470] (dynorb_interface) StdoutLine: {'line': b"Listing '/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface'...\n"}
+[4.228568] (dynorb_interface) StdoutLine: {'line': b"Compiling '/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/__init__.py'...\n"}
+[4.228610] (dynorb_interface) StdoutLine: {'line': b"Listing '/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv'...\n"}
+[4.228646] (dynorb_interface) StdoutLine: {'line': b"Compiling '/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/__init__.py'...\n"}
+[4.228680] (dynorb_interface) StdoutLine: {'line': b"Compiling '/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_dyn_class.py'...\n"}
+[4.228714] (dynorb_interface) StdoutLine: {'line': b"Compiling '/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_feed_frame.py'...\n"}
+[4.232097] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.232271] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[4.232398] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.232590] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[4.232712] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.232900] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[4.232952] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_generator_py.so\n'}
+[4.233172] (dynorb_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_generator_py.so" to ""\n'}
+[4.233231] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/DynClass.idl\n'}
+[4.233343] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/FeedFrame.idl\n'}
+[4.233412] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/DynClass.srv\n'}
+[4.233487] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/DynClass_Request.msg\n'}
+[4.233559] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/DynClass_Response.msg\n'}
+[4.233647] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/FeedFrame.srv\n'}
+[4.233721] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/FeedFrame_Request.msg\n'}
+[4.233783] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/FeedFrame_Response.msg\n'}
+[4.233879] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/ament_index/resource_index/package_run_dependencies/dynorb_interface\n'}
+[4.233969] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/ament_index/resource_index/parent_prefix_path/dynorb_interface\n'}
+[4.234079] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/ament_prefix_path.sh\n'}
+[4.234148] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/ament_prefix_path.dsv\n'}
+[4.234219] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/path.sh\n'}
+[4.234288] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/path.dsv\n'}
+[4.234394] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/local_setup.bash\n'}
+[4.234484] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/local_setup.sh\n'}
+[4.234583] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/local_setup.zsh\n'}
+[4.234652] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/local_setup.dsv\n'}
+[4.234718] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.dsv\n'}
+[4.234826] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/ament_index/resource_index/packages/dynorb_interface\n'}
+[4.234927] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_cExport.cmake\n'}
+[4.235004] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.235088] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.235167] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.235248] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_cppExport.cmake\n'}
+[4.235363] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.235439] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.235543] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.235647] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.235729] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_cExport.cmake\n'}
+[4.235834] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.235914] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.235995] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.236141] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_cppExport.cmake\n'}
+[4.236211] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.236293] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_pyExport.cmake\n'}
+[4.236402] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.236471] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[4.236544] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.236620] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.236691] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.236782] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.236851] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.236923] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.237057] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interfaceConfig.cmake\n'}
+[4.237110] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interfaceConfig-version.cmake\n'}
+[4.246084] (dynorb_interface) StdoutLine: {'line': b'-- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.xml\n'}
+[4.246163] (dynorb_interface) CommandEnded: {'returncode': 0}
+[4.292965] (dynorb_interface) JobEnded: {'identifier': 'dynorb_interface', 'rc': 0}
+[4.293686] (-) EventReactorShutdown: {}

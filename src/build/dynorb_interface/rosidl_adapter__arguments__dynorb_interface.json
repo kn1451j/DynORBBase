@@ -1,0 +1,7 @@
+{
+  "package_name": "dynorb_interface",
+  "non_idl_tuples": [
+    "/home/parallels/DynORBBase/src/dynorb_interface:srv/DynClass.srv",
+    "/home/parallels/DynORBBase/src/dynorb_interface:srv/FeedFrame.srv"
+  ]
+}

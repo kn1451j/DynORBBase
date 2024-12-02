@@ -1,0 +1,19 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing sam_tracking.egg-info/PKG-INFO
+writing dependency_links to sam_tracking.egg-info/dependency_links.txt
+writing entry points to sam_tracking.egg-info/entry_points.txt
+writing requirements to sam_tracking.egg-info/requires.txt
+writing top-level names to sam_tracking.egg-info/top_level.txt
+reading manifest file 'sam_tracking.egg-info/SOURCES.txt'
+writing manifest file 'sam_tracking.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam-tracking.egg-link (link to .)
+Installing tracker script to /home/parallels/DynORBBase/src/install/sam_tracking/lib/sam_tracking
+
+Installed /home/parallels/DynORBBase/src/build/sam_tracking
+running symlink_data
+symbolically linking /home/parallels/DynORBBase/src/build/sam_tracking/resource/sam_tracking -> /home/parallels/DynORBBase/src/install/sam_tracking/share/ament_index/resource_index/packages
+symbolically linking /home/parallels/DynORBBase/src/build/sam_tracking/package.xml -> /home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking

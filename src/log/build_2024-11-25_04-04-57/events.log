@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.000292] (dynorb) JobQueued: {'identifier': 'dynorb', 'dependencies': OrderedDict()}
+[0.000585] (dynorb_interface) JobQueued: {'identifier': 'dynorb_interface', 'dependencies': OrderedDict()}
+[0.000607] (sam_tracking) JobQueued: {'identifier': 'sam_tracking', 'dependencies': OrderedDict()}
+[0.000624] (dynorb) JobStarted: {'identifier': 'dynorb'}
+[0.009446] (dynorb_interface) JobStarted: {'identifier': 'dynorb_interface'}
+[0.011120] (dynorb) JobProgress: {'identifier': 'dynorb', 'progress': 'cmake'}
+[0.012816] (dynorb) Command: {'cmd': ['/usr/bin/cmake', '/home/parallels/DynORBBase/src/dynorb', '-DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/dynorb'], 'cwd': '/home/parallels/DynORBBase/src/build/dynorb', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels/DynORBBase/src/sam_tracking'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1968'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/1946,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/1946'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/88d18826_03a9_4670_a6b1_63c06f28c3cc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ECDVX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/DynORBBase/src/build/dynorb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.014985] (dynorb_interface) JobProgress: {'identifier': 'dynorb_interface', 'progress': 'cmake'}
+[0.015117] (dynorb_interface) JobProgress: {'identifier': 'dynorb_interface', 'progress': 'build'}
+[0.015566] (dynorb_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/DynORBBase/src/build/dynorb_interface', '--', '-j2', '-l2'], 'cwd': '/home/parallels/DynORBBase/src/build/dynorb_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels/DynORBBase/src/sam_tracking'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1968'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/1946,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/1946'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/88d18826_03a9_4670_a6b1_63c06f28c3cc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ECDVX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/DynORBBase/src/build/dynorb_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.030087] (dynorb) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.065502] (dynorb_interface) StdoutLine: {'line': b'[  5%] Built target dynorb_interface__cpp\n'}
+[0.066479] (dynorb_interface) StdoutLine: {'line': b'[ 12%] Built target dynorb_interface__rosidl_generator_c\n'}
+[0.091513] (dynorb_interface) StdoutLine: {'line': b'[ 23%] Built target dynorb_interface__rosidl_typesupport_cpp\n'}
+[0.099879] (dynorb_interface) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_copy_dynorb_interface\n'}
+[0.099986] (-) TimerEvent: {}
+[0.124564] (dynorb_interface) StdoutLine: {'line': b'[ 33%] Built target dynorb_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[0.141164] (dynorb_interface) StdoutLine: {'line': b'[ 43%] Built target dynorb_interface__rosidl_typesupport_introspection_c\n'}
+[0.142709] (dynorb_interface) StdoutLine: {'line': b'[ 53%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c\n'}
+[0.151257] (dynorb) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.163830] (dynorb_interface) StdoutLine: {'line': b'[ 64%] Built target dynorb_interface__rosidl_typesupport_introspection_cpp\n'}
+[0.169399] (dynorb_interface) StdoutLine: {'line': b'[ 74%] Built target dynorb_interface__rosidl_typesupport_c\n'}
+[0.185193] (dynorb_interface) StdoutLine: {'line': b'[ 74%] Built target dynorb_interface\n'}
+[0.200072] (-) TimerEvent: {}
+[0.201612] (dynorb) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:41 (if):\n'}
+[0.201721] (dynorb) StderrLine: {'line': b'  Policy CMP0057 is not set: Support new IN_LIST if() operator.  Run "cmake\n'}
+[0.201872] (dynorb) StderrLine: {'line': b'  --help-policy CMP0057" for policy details.  Use the cmake_policy command to\n'}
+[0.201982] (dynorb) StderrLine: {'line': b'  set the policy and suppress this warning.\n'}
+[0.202023] (dynorb) StderrLine: {'line': b'\n'}
+[0.202071] (dynorb) StderrLine: {'line': b'  IN_LIST will be interpreted as an operator when the policy is set to NEW.\n'}
+[0.202161] (dynorb) StderrLine: {'line': b'  Since the policy is not set the OLD behavior will be used.\n'}
+[0.202211] (dynorb) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.202281] (dynorb) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)\n'}
+[0.202320] (dynorb) StderrLine: {'line': b'  CMakeLists.txt:25 (ament_package)\n'}
+[0.202353] (dynorb) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.202390] (dynorb) StderrLine: {'line': b'\x1b[0m\n'}
+[0.202489] (dynorb) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:41 (if):\n'}
+[0.202553] (dynorb) StderrLine: {'line': b'  if given arguments:\n'}
+[0.202603] (dynorb) StderrLine: {'line': b'\n'}
+[0.202656] (dynorb) StderrLine: {'line': b'    "ament_cmake_core" "IN_LIST" "_ARG_AMENT_EXECUTE_EXTENSIONS_EXCLUDE"\n'}
+[0.202705] (dynorb) StderrLine: {'line': b'\n'}
+[0.202786] (dynorb) StderrLine: {'line': b'  Unknown arguments specified\n'}
+[0.202889] (dynorb) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.202956] (dynorb) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)\n'}
+[0.203023] (dynorb) StderrLine: {'line': b'  CMakeLists.txt:25 (ament_package)\n'}
+[0.203075] (dynorb) StderrLine: {'line': b'\n'}
+[0.203156] (dynorb) StderrLine: {'line': b'\x1b[0m\n'}
+[0.203294] (dynorb) StderrLine: {'line': b'\x1b[31mCMake Error in CMakeLists.txt:\n'}
+[0.203350] (dynorb) StderrLine: {'line': b'  No cmake_minimum_required command is present.  A line of code such as\n'}
+[0.203451] (dynorb) StderrLine: {'line': b'\n'}
+[0.203540] (dynorb) StderrLine: {'line': b'    cmake_minimum_required(VERSION 3.22)\n'}
+[0.203593] (dynorb) StderrLine: {'line': b'\n'}
+[0.203650] (dynorb) StderrLine: {'line': b'  should be added at the top of the file.  The version specified may be lower\n'}
+[0.203705] (dynorb) StderrLine: {'line': b'  if you wish to support older CMake versions for this project.  For more\n'}
+[0.203758] (dynorb) StderrLine: {'line': b'  information run "cmake --help-policy CMP0000".\n'}
+[0.203806] (dynorb) StderrLine: {'line': b'\n'}
+[0.203862] (dynorb) StderrLine: {'line': b'\x1b[0m\n'}
+[0.208730] (dynorb) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.208820] (dynorb) StdoutLine: {'line': b'See also "/home/parallels/DynORBBase/src/build/dynorb/CMakeFiles/CMakeOutput.log".\n'}
+[0.214734] (dynorb) CommandEnded: {'returncode': 1}
+[0.216750] (dynorb_interface) StdoutLine: {'line': b'[ 76%] Built target dynorb_interface__py\n'}
+[0.235542] (dynorb) JobEnded: {'identifier': 'dynorb', 'rc': 1}
+[0.240611] (dynorb_interface) StdoutLine: {'line': b'[ 84%] Built target dynorb_interface__rosidl_generator_py\n'}
+[0.258354] (dynorb_interface) StdoutLine: {'line': b'[ 89%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.271477] (dynorb_interface) StdoutLine: {'line': b'[ 94%] Built target dynorb_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[0.286292] (dynorb_interface) StdoutLine: {'line': b'[100%] Built target dynorb_interface__rosidl_typesupport_c__pyext\n'}
+[0.300199] (-) TimerEvent: {}
+[0.366639] (dynorb_interface) StdoutLine: {'line': b'running egg_info\n'}
+[0.367454] (dynorb_interface) StdoutLine: {'line': b'writing dynorb_interface.egg-info/PKG-INFO\n'}
+[0.367881] (dynorb_interface) StdoutLine: {'line': b'writing dependency_links to dynorb_interface.egg-info/dependency_links.txt\n'}
+[0.368369] (dynorb_interface) StdoutLine: {'line': b'writing top-level names to dynorb_interface.egg-info/top_level.txt\n'}
+[0.370333] (dynorb_interface) StdoutLine: {'line': b"reading manifest file 'dynorb_interface.egg-info/SOURCES.txt'\n"}
+[0.370977] (dynorb_interface) StdoutLine: {'line': b"writing manifest file 'dynorb_interface.egg-info/SOURCES.txt'\n"}
+[0.388990] (dynorb_interface) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_dynorb_interface_egg\n'}
+[0.404942] (-) TimerEvent: {}
+[0.407272] (dynorb_interface) JobEnded: {'identifier': 'dynorb_interface', 'rc': 'SIGINT'}
+[0.417685] (sam_tracking) JobSkipped: {'identifier': 'sam_tracking'}
+[0.417718] (-) EventReactorShutdown: {}

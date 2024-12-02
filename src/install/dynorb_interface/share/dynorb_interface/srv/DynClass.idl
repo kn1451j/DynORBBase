@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dynorb_interface/srv/DynClass.srv
+// generated code does not contain a copyright notice
+
+
+module dynorb_interface {
+  module srv {
+    struct DynClass_Request {
+      int64 x;
+
+      int64 y;
+    };
+    struct DynClass_Response {
+      int64 cat;
+    };
+  };
+};

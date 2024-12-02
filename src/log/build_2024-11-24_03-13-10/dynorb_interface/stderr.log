@@ -1,0 +1,98 @@
+In file included from [01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_cpp/dynorb_interface/srv/dyn_class__type_support.cpp:7[m[K:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:186:20:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K;[m[K’ token
+  186 |   _class_type class[01;31m[K;[m[K
+      |                    [01;31m[K^[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:186:3:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+  186 |   [01;31m[K_class_type[m[K class;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:186:20:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  186 |   _class_type class[01;31m[K;[m[K
+      |                    [01;31m[K^[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:[m[K In constructor ‘[01m[Kdynorb_interface::srv::DynClass_Response_<ContainerAllocator>::DynClass_Response_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:169:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  169 |       this->[01;31m[Kclass[m[K = 0ll;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:[m[K In constructor ‘[01m[Kdynorb_interface::srv::DynClass_Response_<ContainerAllocator>::DynClass_Response_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:179:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  179 |       this->[01;31m[Kclass[m[K = 0ll;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:[m[K In member function ‘[01m[Kdynorb_interface::srv::DynClass_Response_<ContainerAllocator>::Type& dynorb_interface::srv::DynClass_Response_<ContainerAllocator>::set__class(const int64_t&)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:192:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  192 |     this->[01;31m[Kclass[m[K = _arg;
+      |           [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:[m[K In member function ‘[01m[Kbool dynorb_interface::srv::DynClass_Response_<ContainerAllocator>::operator==(const dynorb_interface::srv::DynClass_Response_<ContainerAllocator>&) const[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:238:15:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  238 |     if (this->[01;31m[Kclass[m[K != other.class) {
+      |               [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:238:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kclass[m[K’
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:238:8:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  238 |     if [01;36m[K([m[Kthis->class != other.class) {
+      |        [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/dynorb_interface__rosidl_typesupport_cpp.dir/build.make:180: CMakeFiles/dynorb_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynorb_interface/srv/dyn_class__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/dynorb_interface__rosidl_typesupport_cpp.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:4[m[K:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:186:20:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K;[m[K’ token
+  186 |   _class_type class[01;31m[K;[m[K
+      |                    [01;31m[K^[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:186:3:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+  186 |   [01;31m[K_class_type[m[K class;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:186:20:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  186 |   _class_type class[01;31m[K;[m[K
+      |                    [01;31m[K^[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:[m[K In constructor ‘[01m[Kdynorb_interface::srv::DynClass_Response_<ContainerAllocator>::DynClass_Response_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:169:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  169 |       this->[01;31m[Kclass[m[K = 0ll;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:[m[K In constructor ‘[01m[Kdynorb_interface::srv::DynClass_Response_<ContainerAllocator>::DynClass_Response_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:179:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  179 |       this->[01;31m[Kclass[m[K = 0ll;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:[m[K In member function ‘[01m[Kdynorb_interface::srv::DynClass_Response_<ContainerAllocator>::Type& dynorb_interface::srv::DynClass_Response_<ContainerAllocator>::set__class(const int64_t&)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:192:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  192 |     this->[01;31m[Kclass[m[K = _arg;
+      |           [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:[m[K In member function ‘[01m[Kbool dynorb_interface::srv::DynClass_Response_<ContainerAllocator>::operator==(const dynorb_interface::srv::DynClass_Response_<ContainerAllocator>&) const[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:238:15:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  238 |     if (this->[01;31m[Kclass[m[K != other.class) {
+      |               [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:238:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kclass[m[K’
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_generator_cpp/dynorb_interface/srv/detail/dyn_class__struct.hpp:238:8:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  238 |     if [01;36m[K([m[Kthis->class != other.class) {
+      |        [01;36m[K^[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:[m[K In function ‘[01m[Kbool dynorb_interface::srv::typesupport_fastrtps_cpp::cdr_serialize(const DynClass_Response&, eprosima::fastcdr::Cdr&)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:269:22:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  269 |   cdr << ros_message.[01;31m[Kclass[m[K;
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:[m[K In function ‘[01m[Kbool dynorb_interface::srv::typesupport_fastrtps_cpp::cdr_deserialize(eprosima::fastcdr::Cdr&, dynorb_interface::srv::DynClass_Response&)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:280:22:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  280 |   cdr >> ros_message.[01;31m[Kclass[m[K;
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:[m[K In function ‘[01m[Ksize_t dynorb_interface::srv::typesupport_fastrtps_cpp::get_serialized_size(const DynClass_Response&, size_t)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:300:43:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  300 |     size_t item_size = sizeof(ros_message.[01;31m[Kclass[m[K);
+      |                                           [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:300:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kclass[m[K’
+  300 |     size_t item_size = sizeof[34m[K([m[Kros_message.[01;31m[Kc[m[K[32m[Klass[m[K);
+      |                              [34m[K~[m[K            [01;31m[K^[m[K[32m[K~~~~[m[K
+      |                                           [32m[K)[m[K
+In file included from [01m[K/usr/include/strings.h:23[m[K,
+                 from [01m[K/usr/include/string.h:462[m[K,
+                 from [01m[K/opt/ros/humble/include/fastcdr/fastcdr/FastBuffer.h:21[m[K,
+                 from [01m[K/opt/ros/humble/include/fastcdr/fastcdr/Cdr.h:19[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_fastrtps_cpp.hpp:25[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:4[m[K:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:[m[K In function ‘[01m[Ksize_t dynorb_interface::srv::typesupport_fastrtps_cpp::max_serialized_size_DynClass_Response(bool&, bool&, size_t)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:345:26:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kclass[m[K’
+  345 |       offsetof(DataType, [01;31m[Kclass[m[K) +
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:345:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kclass[m[K’
+[01m[K/home/parallels/DynORBBase/src/build/dynorb_interface/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp:345:7:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  345 |       [01;36m[Koffsetof[m[K(DataType, class) +
+      |       [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dynorb_interface__rosidl_typesupport_fastrtps_cpp.dir/build.make:188: CMakeFiles/dynorb_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynorb_interface/srv/detail/dds_fastrtps/dyn_class__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/dynorb_interface__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,9 @@
+[0.009s] Invoking command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2': /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/ORB_SLAM2 -- -j2 -l2
+[0.088s] [ 62%] Built target ORB_SLAM2
+[0.143s] [ 68%] Built target rgbd_tum
+[0.145s] [ 75%] Built target stereo_kitti
+[0.174s] [ 81%] Built target stereo_euroc
+[0.199s] [ 87%] Built target mono_tum
+[0.217s] [ 93%] Built target mono_kitti
+[0.230s] [100%] Built target mono_euroc
+[0.256s] Invoked command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2' returned '0': /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/ORB_SLAM2 -- -j2 -l2

@@ -1,0 +1,30 @@
+[1.182s] Invoking command in '/home/parallels/DynORBBase/src/sam_tracking': PYTHONPATH=/home/parallels/DynORBBase/src/build/sam_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/sam_tracking build --build-base /home/parallels/DynORBBase/src/build/sam_tracking/build install --record /home/parallels/DynORBBase/src/build/sam_tracking/install.log --single-version-externally-managed install_data
+[1.570s] running egg_info
+[1.571s] creating ../build/sam_tracking/sam_tracking.egg-info
+[1.572s] writing ../build/sam_tracking/sam_tracking.egg-info/PKG-INFO
+[1.574s] writing dependency_links to ../build/sam_tracking/sam_tracking.egg-info/dependency_links.txt
+[1.575s] writing entry points to ../build/sam_tracking/sam_tracking.egg-info/entry_points.txt
+[1.575s] writing requirements to ../build/sam_tracking/sam_tracking.egg-info/requires.txt
+[1.576s] writing top-level names to ../build/sam_tracking/sam_tracking.egg-info/top_level.txt
+[1.577s] writing manifest file '../build/sam_tracking/sam_tracking.egg-info/SOURCES.txt'
+[1.580s] reading manifest file '../build/sam_tracking/sam_tracking.egg-info/SOURCES.txt'
+[1.589s] adding license file 'LICENSE'
+[1.590s] writing manifest file '../build/sam_tracking/sam_tracking.egg-info/SOURCES.txt'
+[1.591s] running build
+[1.592s] running build_py
+[1.593s] creating /home/parallels/DynORBBase/src/build/sam_tracking/build
+[1.593s] creating /home/parallels/DynORBBase/src/build/sam_tracking/build/lib
+[1.594s] creating /home/parallels/DynORBBase/src/build/sam_tracking/build/lib/sam_tracking
+[1.594s] copying sam_tracking/tracker.py -> /home/parallels/DynORBBase/src/build/sam_tracking/build/lib/sam_tracking
+[1.596s] copying sam_tracking/__init__.py -> /home/parallels/DynORBBase/src/build/sam_tracking/build/lib/sam_tracking
+[1.598s] running install
+[1.598s] running install_lib
+[1.599s] creating /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking
+[1.600s] copying /home/parallels/DynORBBase/src/build/sam_tracking/build/lib/sam_tracking/tracker.py -> /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking
+[1.601s] copying /home/parallels/DynORBBase/src/build/sam_tracking/build/lib/sam_tracking/__init__.py -> /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking
+[1.604s] byte-compiling /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking/tracker.py to tracker.cpython-310.pyc
+[1.605s] byte-compiling /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking/__init__.py to __init__.cpython-310.pyc
+[1.607s] running install_data
+[1.607s] copying resource/sam_tracking -> /home/parallels/DynORBBase/src/install/sam_tracking/share/ament_index/resource_index/packages
+[1.608s] error: could not create '/home/parallels/DynORBBase/src/install/sam_tracking/share/ament_index/resource_index/packages/sam_tracking': No such file or directory
+[1.626s] Invoked command in '/home/parallels/DynORBBase/src/sam_tracking' returned '1': PYTHONPATH=/home/parallels/DynORBBase/src/build/sam_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/sam_tracking build --build-base /home/parallels/DynORBBase/src/build/sam_tracking/build install --record /home/parallels/DynORBBase/src/build/sam_tracking/install.log --single-version-externally-managed install_data

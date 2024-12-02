@@ -1,0 +1,15 @@
+/home/parallels/DynORBBase/src/install/dynorb/share/ament_index/resource_index/package_run_dependencies/dynorb
+/home/parallels/DynORBBase/src/install/dynorb/share/ament_index/resource_index/parent_prefix_path/dynorb
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/environment/ament_prefix_path.sh
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/environment/ament_prefix_path.dsv
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/environment/path.sh
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/environment/path.dsv
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/local_setup.bash
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/local_setup.sh
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/local_setup.zsh
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/local_setup.dsv
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.dsv
+/home/parallels/DynORBBase/src/install/dynorb/share/ament_index/resource_index/packages/dynorb
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/cmake/dynorbConfig.cmake
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/cmake/dynorbConfig-version.cmake
+/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.xml

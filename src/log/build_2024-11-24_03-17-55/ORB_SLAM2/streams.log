@@ -1,0 +1,8 @@
+[0.008s] Invoking command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2': /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/ORB_SLAM2 -- -j2 -l2
+[0.082s] [ 62%] Built target ORB_SLAM2
+[0.099s] [ 68%] Built target rgbd_tum
+[0.111s] [ 75%] Built target stereo_kitti
+[0.123s] [ 81%] Built target stereo_euroc
+[0.146s] [ 87%] Built target mono_tum
+[0.147s] [ 93%] Built target mono_kitti
+[0.165s] [100%] Built target mono_euroc

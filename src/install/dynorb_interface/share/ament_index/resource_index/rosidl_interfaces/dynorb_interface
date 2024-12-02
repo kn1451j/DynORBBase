@@ -1,0 +1,8 @@
+srv/DynClass.idl
+srv/DynClass.srv
+srv/DynClass_Request.msg
+srv/DynClass_Response.msg
+srv/FeedFrame.idl
+srv/FeedFrame.srv
+srv/FeedFrame_Request.msg
+srv/FeedFrame_Response.msg

@@ -1,0 +1,261 @@
+[0.063s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.063s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa6afeec0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa6afe8f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa6afe8f0>>, mixin_verb=('build',))
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.156s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/parallels/DynORBBase/src'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'dynorb' with type 'ros.ament_cmake' and name 'dynorb'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(dynorb_interface) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'dynorb_interface' with type 'ros.ament_cmake' and name 'dynorb_interface'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam-coco-integration) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(sam_tracking) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'sam_tracking' with type 'ros.ament_python' and name 'sam_tracking'
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.187s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/parallels/DynORBBase/src/install
+[0.187s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'cmake_target' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'dynorb_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.210s] DEBUG:colcon.colcon_core.verb:Building package 'dynorb_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/DynORBBase/src/build/dynorb_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/DynORBBase/src/install/dynorb_interface', 'merge_install': False, 'path': '/home/parallels/DynORBBase/src/dynorb_interface', 'symlink_install': False, 'test_result_base': None}
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'cmake_target' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'cmake_clean_first' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'cmake_force_configure' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'ament_cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'sam_tracking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.211s] DEBUG:colcon.colcon_core.verb:Building package 'sam_tracking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/DynORBBase/src/build/sam_tracking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/DynORBBase/src/install/sam_tracking', 'merge_install': False, 'path': '/home/parallels/DynORBBase/src/sam_tracking', 'symlink_install': False, 'test_result_base': None}
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'cmake_target' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'cmake_clean_cache' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'cmake_clean_first' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'cmake_force_configure' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'ament_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'catkin_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'dynorb' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.211s] DEBUG:colcon.colcon_core.verb:Building package 'dynorb' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/DynORBBase/src/build/dynorb', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/DynORBBase/src/install/dynorb', 'merge_install': False, 'path': '/home/parallels/DynORBBase/src/dynorb', 'symlink_install': False, 'test_result_base': None}
+[0.211s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.212s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.212s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/DynORBBase/src/dynorb_interface' with build type 'ament_cmake'
+[0.212s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/DynORBBase/src/dynorb_interface'
+[0.213s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.213s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.213s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.216s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/parallels/DynORBBase/src/sam_tracking' with build type 'ament_python'
+[0.216s] Level 1:colcon.colcon_core.shell:create_environment_hook('sam_tracking', 'ament_prefix_path')
+[0.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/hook/ament_prefix_path.ps1'
+[0.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/hook/ament_prefix_path.dsv'
+[0.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/hook/ament_prefix_path.sh'
+[0.218s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.218s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/DynORBBase/src/build/dynorb_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb_interface -- -j2 -l2
+[0.367s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/parallels/DynORBBase/src/sam_tracking'
+[0.368s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.368s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/DynORBBase/src/sam_tracking': PYTHONPATH=/home/parallels/DynORBBase/src/build/sam_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/sam_tracking build --build-base /home/parallels/DynORBBase/src/build/sam_tracking/build install --record /home/parallels/DynORBBase/src/build/sam_tracking/install.log --single-version-externally-managed install_data
+[0.784s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/sam_tracking' for CMake module files
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/sam_tracking' for CMake config files
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/sam_tracking/lib'
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/sam_tracking/bin'
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/sam_tracking/lib/pkgconfig/sam_tracking.pc'
+[0.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/DynORBBase/src/sam_tracking' returned '0': PYTHONPATH=/home/parallels/DynORBBase/src/build/sam_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/sam_tracking build --build-base /home/parallels/DynORBBase/src/build/sam_tracking/build install --record /home/parallels/DynORBBase/src/build/sam_tracking/install.log --single-version-externally-managed install_data
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages'
+[0.786s] Level 1:colcon.colcon_core.shell:create_environment_hook('sam_tracking', 'pythonpath')
+[0.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/hook/pythonpath.ps1'
+[0.786s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/hook/pythonpath.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/hook/pythonpath.sh'
+[0.787s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/sam_tracking/bin'
+[0.787s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sam_tracking)
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/package.ps1'
+[0.788s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/package.dsv'
+[0.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/package.sh'
+[0.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/package.bash'
+[0.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking/package.zsh'
+[0.793s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/DynORBBase/src/install/sam_tracking/share/colcon-core/packages/sam_tracking)
+[5.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/DynORBBase/src/build/dynorb_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb_interface -- -j2 -l2
+[5.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/DynORBBase/src/build/dynorb_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb_interface
+[5.100s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynorb_interface)
+[5.100s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface' for CMake module files
+[5.100s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface' for CMake config files
+[5.100s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynorb_interface', 'cmake_prefix_path')
+[5.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/cmake_prefix_path.ps1'
+[5.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/cmake_prefix_path.dsv'
+[5.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/cmake_prefix_path.sh'
+[5.101s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/lib'
+[5.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynorb_interface', 'ld_library_path_lib')
+[5.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/ld_library_path_lib.ps1'
+[5.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/ld_library_path_lib.dsv'
+[5.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/ld_library_path_lib.sh'
+[5.102s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/bin'
+[5.102s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/lib/pkgconfig/dynorb_interface.pc'
+[5.102s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/lib/python3.10/site-packages'
+[5.102s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/bin'
+[5.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.ps1'
+[5.103s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.dsv'
+[5.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.sh'
+[5.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.bash'
+[5.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.zsh'
+[5.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/DynORBBase/src/install/dynorb_interface/share/colcon-core/packages/dynorb_interface)
+[5.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/DynORBBase/src/build/dynorb_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb_interface
+[5.146s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynorb_interface)
+[5.147s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface' for CMake module files
+[5.147s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface' for CMake config files
+[5.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynorb_interface', 'cmake_prefix_path')
+[5.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/cmake_prefix_path.ps1'
+[5.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/cmake_prefix_path.dsv'
+[5.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/cmake_prefix_path.sh'
+[5.148s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/lib'
+[5.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynorb_interface', 'ld_library_path_lib')
+[5.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/ld_library_path_lib.ps1'
+[5.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/ld_library_path_lib.dsv'
+[5.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/hook/ld_library_path_lib.sh'
+[5.149s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/bin'
+[5.149s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/lib/pkgconfig/dynorb_interface.pc'
+[5.149s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/lib/python3.10/site-packages'
+[5.149s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb_interface/bin'
+[5.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.ps1'
+[5.149s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.dsv'
+[5.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.sh'
+[5.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.bash'
+[5.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.zsh'
+[5.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/DynORBBase/src/install/dynorb_interface/share/colcon-core/packages/dynorb_interface)
+[5.150s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/DynORBBase/src/dynorb' with build type 'ament_cmake'
+[5.151s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/DynORBBase/src/dynorb'
+[5.151s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.151s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.157s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+[70.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+[70.834s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb
+[70.849s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynorb)
+[70.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb
+[70.862s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb' for CMake module files
+[70.864s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb' for CMake config files
+[70.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynorb', 'cmake_prefix_path')
+[70.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/hook/cmake_prefix_path.ps1'
+[70.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/hook/cmake_prefix_path.dsv'
+[70.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/hook/cmake_prefix_path.sh'
+[70.892s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb/bin'
+[70.893s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb/lib/pkgconfig/dynorb.pc'
+[70.899s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb/lib/python3.10/site-packages'
+[70.899s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb/bin'
+[70.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.ps1'
+[70.903s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.dsv'
+[70.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.sh'
+[70.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.bash'
+[70.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.zsh'
+[70.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/DynORBBase/src/install/dynorb/share/colcon-core/packages/dynorb)
+[70.949s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynorb)
+[70.949s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb' for CMake module files
+[70.949s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb' for CMake config files
+[70.949s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynorb', 'cmake_prefix_path')
+[70.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/hook/cmake_prefix_path.ps1'
+[70.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/hook/cmake_prefix_path.dsv'
+[70.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/hook/cmake_prefix_path.sh'
+[70.951s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb/bin'
+[70.951s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb/lib/pkgconfig/dynorb.pc'
+[70.951s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb/lib/python3.10/site-packages'
+[70.951s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/DynORBBase/src/install/dynorb/bin'
+[70.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.ps1'
+[70.952s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.dsv'
+[70.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.sh'
+[70.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.bash'
+[70.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.zsh'
+[70.955s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/DynORBBase/src/install/dynorb/share/colcon-core/packages/dynorb)
+[70.957s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[70.962s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[70.964s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[70.965s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[71.025s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[71.025s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[71.026s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[71.046s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[71.048s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parallels/DynORBBase/src/install/local_setup.ps1'
+[71.051s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/parallels/DynORBBase/src/install/_local_setup_util_ps1.py'
+[71.054s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parallels/DynORBBase/src/install/setup.ps1'
+[71.057s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parallels/DynORBBase/src/install/local_setup.sh'
+[71.058s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/parallels/DynORBBase/src/install/_local_setup_util_sh.py'
+[71.059s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parallels/DynORBBase/src/install/setup.sh'
+[71.060s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parallels/DynORBBase/src/install/local_setup.bash'
+[71.061s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parallels/DynORBBase/src/install/setup.bash'
+[71.062s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parallels/DynORBBase/src/install/local_setup.zsh'
+[71.063s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parallels/DynORBBase/src/install/setup.zsh'

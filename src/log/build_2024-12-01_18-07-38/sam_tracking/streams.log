@@ -1,0 +1,21 @@
+[0.396s] Invoking command in '/home/parallels/DynORBBase/src/build/sam_tracking': PYTHONPATH=/home/parallels/DynORBBase/src/build/sam_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/parallels/DynORBBase/src/build/sam_tracking/build --no-deps symlink_data --force
+[0.555s] running develop
+[0.556s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.557s]   warnings.warn(
+[0.683s] running egg_info
+[0.683s] writing sam_tracking.egg-info/PKG-INFO
+[0.683s] writing dependency_links to sam_tracking.egg-info/dependency_links.txt
+[0.683s] writing entry points to sam_tracking.egg-info/entry_points.txt
+[0.683s] writing requirements to sam_tracking.egg-info/requires.txt
+[0.683s] writing top-level names to sam_tracking.egg-info/top_level.txt
+[0.684s] reading manifest file 'sam_tracking.egg-info/SOURCES.txt'
+[0.684s] writing manifest file 'sam_tracking.egg-info/SOURCES.txt'
+[0.685s] running build_ext
+[0.686s] Creating /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam-tracking.egg-link (link to .)
+[0.686s] Installing tracker script to /home/parallels/DynORBBase/src/install/sam_tracking/lib/sam_tracking
+[0.686s] 
+[0.688s] Installed /home/parallels/DynORBBase/src/build/sam_tracking
+[0.688s] running symlink_data
+[0.688s] symbolically linking /home/parallels/DynORBBase/src/build/sam_tracking/resource/sam_tracking -> /home/parallels/DynORBBase/src/install/sam_tracking/share/ament_index/resource_index/packages
+[0.689s] symbolically linking /home/parallels/DynORBBase/src/build/sam_tracking/package.xml -> /home/parallels/DynORBBase/src/install/sam_tracking/share/sam_tracking
+[0.708s] Invoked command in '/home/parallels/DynORBBase/src/build/sam_tracking' returned '0': PYTHONPATH=/home/parallels/DynORBBase/src/build/sam_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/parallels/DynORBBase/src/build/sam_tracking/build --no-deps symlink_data --force

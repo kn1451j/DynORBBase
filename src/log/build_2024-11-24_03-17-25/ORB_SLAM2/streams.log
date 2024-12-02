@@ -1,0 +1,31 @@
+[0.007s] Invoking command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2': /usr/bin/cmake /home/parallels/DynORBBase/src/DynORB -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/ORB_SLAM2
+[0.019s] -- Using flag -std=c++11.
+[0.019s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.019s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.019s]   CMake.
+[0.019s] 
+[0.019s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.019s]   CMake that the project does not need compatibility with older versions.
+[0.020s] 
+[0.020s] [0m
+[0.020s] [0mBuild type: Release[0m
+[0.029s] -- Configuring done
+[0.073s] -- Generating done
+[0.078s] -- Build files have been written to: /home/parallels/DynORBBase/src/build/ORB_SLAM2
+[0.081s] Invoked command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2' returned '0': /usr/bin/cmake /home/parallels/DynORBBase/src/DynORB -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/ORB_SLAM2
+[0.081s] Invoking command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2': /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/ORB_SLAM2 -- -j2 -l2
+[0.114s] [35m[1mConsolidate compiler generated dependencies of target ORB_SLAM2[0m
+[0.185s] [ 62%] Built target ORB_SLAM2
+[0.192s] [35m[1mConsolidate compiler generated dependencies of target rgbd_tum[0m
+[0.208s] [35m[1mConsolidate compiler generated dependencies of target stereo_kitti[0m
+[0.219s] [ 68%] Built target rgbd_tum
+[0.229s] [ 75%] Built target stereo_kitti
+[0.235s] [35m[1mConsolidate compiler generated dependencies of target mono_tum[0m
+[0.246s] [35m[1mConsolidate compiler generated dependencies of target stereo_euroc[0m
+[0.263s] [ 81%] Built target stereo_euroc
+[0.269s] [35m[1mConsolidate compiler generated dependencies of target mono_kitti[0m
+[0.271s] [ 87%] Built target mono_tum
+[0.288s] [35m[1mConsolidate compiler generated dependencies of target mono_euroc[0m
+[0.299s] [ 93%] Built target mono_kitti
+[0.310s] [100%] Built target mono_euroc
+[0.319s] Invoked command in '/home/parallels/DynORBBase/src/build/ORB_SLAM2' returned '0': /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/ORB_SLAM2 -- -j2 -l2

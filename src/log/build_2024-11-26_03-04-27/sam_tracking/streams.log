@@ -1,0 +1,22 @@
+[0.819s] Invoking command in '/home/parallels/DynORBBase/src/sam_tracking': PYTHONPATH=/home/parallels/DynORBBase/src/build/sam_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/sam_tracking build --build-base /home/parallels/DynORBBase/src/build/sam_tracking/build install --record /home/parallels/DynORBBase/src/build/sam_tracking/install.log --single-version-externally-managed install_data
+[1.030s] running egg_info
+[1.031s] writing ../build/sam_tracking/sam_tracking.egg-info/PKG-INFO
+[1.032s] writing dependency_links to ../build/sam_tracking/sam_tracking.egg-info/dependency_links.txt
+[1.033s] writing entry points to ../build/sam_tracking/sam_tracking.egg-info/entry_points.txt
+[1.034s] writing requirements to ../build/sam_tracking/sam_tracking.egg-info/requires.txt
+[1.034s] writing top-level names to ../build/sam_tracking/sam_tracking.egg-info/top_level.txt
+[1.036s] reading manifest file '../build/sam_tracking/sam_tracking.egg-info/SOURCES.txt'
+[1.037s] adding license file 'LICENSE'
+[1.038s] writing manifest file '../build/sam_tracking/sam_tracking.egg-info/SOURCES.txt'
+[1.039s] running build
+[1.039s] running build_py
+[1.040s] running install
+[1.041s] running install_lib
+[1.043s] running install_data
+[1.044s] running install_egg_info
+[1.047s] removing '/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking-0.0.0-py3.10.egg-info' (and everything under it)
+[1.061s] Copying ../build/sam_tracking/sam_tracking.egg-info to /home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages/sam_tracking-0.0.0-py3.10.egg-info
+[1.061s] running install_scripts
+[1.079s] Installing tracker script to /home/parallels/DynORBBase/src/install/sam_tracking/lib/sam_tracking
+[1.081s] writing list of installed files to '/home/parallels/DynORBBase/src/build/sam_tracking/install.log'
+[1.128s] Invoked command in '/home/parallels/DynORBBase/src/sam_tracking' returned '0': PYTHONPATH=/home/parallels/DynORBBase/src/build/sam_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/sam_tracking build --build-base /home/parallels/DynORBBase/src/build/sam_tracking/build install --record /home/parallels/DynORBBase/src/build/sam_tracking/install.log --single-version-externally-managed install_data

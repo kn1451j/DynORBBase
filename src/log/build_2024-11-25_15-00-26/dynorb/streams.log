@@ -1,0 +1,51 @@
+[0.015s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+[0.046s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.172s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.205s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.207s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.215s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.266s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.310s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.311s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.470s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.538s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.568s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.574s] [0mBuild type: Release[0m
+[0.574s] -- Using flag -std=c++11.
+[0.579s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.660s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.661s] -- Configured cppcheck include dirs: /home/parallels/DynORBBase/src/dynorb/include
+[0.661s] -- Configured cppcheck exclude dirs and/or files: 
+[0.664s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.670s] -- Added test 'lint_cmake' to check CMake code style
+[0.673s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.696s] -- Added test 'uncrustify' to check C / C++ code style
+[0.696s] -- Configured uncrustify additional arguments: 
+[0.699s] -- Added test 'xmllint' to check XML markup files
+[0.700s] -- Configuring done
+[0.798s] -- Generating done
+[0.807s] -- Build files have been written to: /home/parallels/DynORBBase/src/build/dynorb
+[0.853s] [35m[1mConsolidate compiler generated dependencies of target dynorb[0m
+[0.923s] [  3%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/System.cc.o[0m
+[0.933s] [  6%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/Tracking.cc.o[0m
+[1.887s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:38[m[K,
+[1.887s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:28[m[K,
+[1.888s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[1.888s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Tracking.cc:22[m[K:
+[1.888s] [01m[K/home/parallels/DynORBBase/src/dynorb/include/DynamObjTracker.h:6:10:[m[K [01;31m[Kfatal error: [m[Kdynorb_interface/srv/DynClass.hpp: No such file or directory
+[1.888s]     6 | #include [01;31m[K"dynorb_interface/srv/DynClass.hpp"[m[K
+[1.889s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.889s] compilation terminated.
+[1.890s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:38[m[K,
+[1.890s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23[m[K:
+[1.890s] [01m[K/home/parallels/DynORBBase/src/dynorb/include/DynamObjTracker.h:6:10:[m[K [01;31m[Kfatal error: [m[Kdynorb_interface/srv/DynClass.hpp: No such file or directory
+[1.891s]     6 | #include [01;31m[K"dynorb_interface/srv/DynClass.hpp"[m[K
+[1.891s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.891s] compilation terminated.
+[1.893s] gmake[2]: *** [CMakeFiles/dynorb.dir/build.make:90: CMakeFiles/dynorb.dir/src/Tracking.cc.o] Error 1
+[1.894s] gmake[2]: *** Waiting for unfinished jobs....
+[1.899s] gmake[2]: *** [CMakeFiles/dynorb.dir/build.make:76: CMakeFiles/dynorb.dir/src/System.cc.o] Error 1
+[1.899s] gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/dynorb.dir/all] Error 2
+[1.900s] gmake: *** [Makefile:146: all] Error 2
+[1.901s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2

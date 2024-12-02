@@ -1,0 +1,4 @@
+source;share/dynorb_interface/local_setup.bash
+source;share/dynorb_interface/local_setup.dsv
+source;share/dynorb_interface/local_setup.sh
+source;share/dynorb_interface/local_setup.zsh

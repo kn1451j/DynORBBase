@@ -1,0 +1,169 @@
+[0.011s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb_interface -- -j2 -l2
+[0.063s] [  2%] Built target dynorb_interface__cpp
+[0.077s] [ 12%] Built target dynorb_interface__rosidl_generator_c
+[0.092s] [ 23%] Built target dynorb_interface__rosidl_typesupport_cpp
+[0.116s] [ 23%] Built target ament_cmake_python_copy_dynorb_interface
+[0.123s] [ 33%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c
+[0.146s] [ 43%] Built target dynorb_interface__rosidl_typesupport_introspection_c
+[0.165s] [ 53%] Built target dynorb_interface__rosidl_typesupport_fastrtps_cpp
+[0.171s] [ 64%] Built target dynorb_interface__rosidl_typesupport_c
+[0.190s] [ 74%] Built target dynorb_interface__rosidl_typesupport_introspection_cpp
+[0.238s] [ 74%] Built target dynorb_interface
+[0.249s] [ 76%] Built target dynorb_interface__py
+[0.267s] [ 84%] Built target dynorb_interface__rosidl_generator_py
+[0.283s] [ 89%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.298s] [ 94%] Built target dynorb_interface__rosidl_typesupport_introspection_c__pyext
+[0.335s] [100%] Built target dynorb_interface__rosidl_typesupport_c__pyext
+[0.425s] running egg_info
+[0.430s] writing dynorb_interface.egg-info/PKG-INFO
+[0.430s] writing dependency_links to dynorb_interface.egg-info/dependency_links.txt
+[0.430s] writing top-level names to dynorb_interface.egg-info/top_level.txt
+[0.433s] reading manifest file 'dynorb_interface.egg-info/SOURCES.txt'
+[0.433s] writing manifest file 'dynorb_interface.egg-info/SOURCES.txt'
+[0.453s] [100%] Built target ament_cmake_python_build_dynorb_interface_egg
+[0.483s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb_interface -- -j2 -l2
+[0.536s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb_interface
+[0.547s] -- Install configuration: ""
+[0.548s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/ament_index/resource_index/rosidl_interfaces/dynorb_interface
+[0.548s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface
+[0.548s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg
+[0.549s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg/rosidl_generator_c__visibility_control.h
+[0.549s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv
+[0.549s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail
+[0.550s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__functions.c
+[0.550s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__type_support.h
+[0.550s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__functions.h
+[0.551s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__functions.h
+[0.551s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__struct.h
+[0.551s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__type_support.h
+[0.552s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__struct.h
+[0.552s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__functions.c
+[0.552s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/dyn_class.h
+[0.553s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/feed_frame.h
+[0.553s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/library_path.sh
+[0.553s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/library_path.dsv
+[0.553s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_generator_c.so
+[0.553s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface
+[0.553s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg
+[0.553s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.554s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv
+[0.554s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail
+[0.554s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__rosidl_typesupport_fastrtps_c.h
+[0.554s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_fastrtps_c.h
+[0.554s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_fastrtps_c.so
+[0.554s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface
+[0.554s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv
+[0.554s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__traits.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__struct.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__traits.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__builder.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__builder.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__struct.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/dyn_class.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/feed_frame.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dds_fastrtps
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__rosidl_typesupport_fastrtps_cpp.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_fastrtps_cpp.hpp
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_fastrtps_cpp.so
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface
+[0.557s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_introspection_c.h
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__rosidl_typesupport_introspection_c.h
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__type_support.c
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__type_support.c
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_introspection_c.so
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_c.so
+[0.558s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__type_support.cpp
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__rosidl_typesupport_introspection_cpp.hpp
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/feed_frame__type_support.cpp
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/include/dynorb_interface/dynorb_interface/srv/detail/dyn_class__rosidl_typesupport_introspection_cpp.hpp
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_introspection_cpp.so
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_typesupport_cpp.so
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/pythonpath.sh
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/pythonpath.dsv
+[0.565s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info
+[0.565s] -- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.569s] -- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info/top_level.txt
+[0.569s] -- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[0.569s] -- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_introspection_c.c
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/__init__.py
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/libdynorb_interface__rosidl_generator_py.so
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_feed_frame.py
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_dyn_class_s.c
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_feed_frame_s.c
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/__init__.py
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv/_dyn_class.py
+[0.569s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/_dynorb_interface_s.ep.rosidl_typesupport_c.c
+[0.591s] Listing '/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface'...
+[0.592s] Listing '/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/srv'...
+[0.594s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[0.595s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[0.595s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages/dynorb_interface/dynorb_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[0.595s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/lib/libdynorb_interface__rosidl_generator_py.so
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/DynClass.idl
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/FeedFrame.idl
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/DynClass.srv
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/DynClass_Request.msg
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/DynClass_Response.msg
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/FeedFrame.srv
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/FeedFrame_Request.msg
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/srv/FeedFrame_Response.msg
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/ament_index/resource_index/package_run_dependencies/dynorb_interface
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/ament_index/resource_index/parent_prefix_path/dynorb_interface
+[0.596s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/ament_prefix_path.sh
+[0.597s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/ament_prefix_path.dsv
+[0.597s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/path.sh
+[0.597s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/environment/path.dsv
+[0.597s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/local_setup.bash
+[0.597s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/local_setup.sh
+[0.597s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/local_setup.zsh
+[0.597s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/local_setup.dsv
+[0.597s] -- Installing: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.dsv
+[0.598s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/ament_index/resource_index/packages/dynorb_interface
+[0.598s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_cExport.cmake
+[0.598s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_cExport-noconfig.cmake
+[0.598s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[0.598s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.598s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_cppExport.cmake
+[0.599s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.599s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.599s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_introspection_cExport.cmake
+[0.599s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.599s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_cExport.cmake
+[0.599s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_cExport-noconfig.cmake
+[0.599s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_introspection_cppExport.cmake
+[0.600s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.600s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_cppExport.cmake
+[0.600s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[0.600s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_pyExport.cmake
+[0.600s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/export_dynorb_interface__rosidl_generator_pyExport-noconfig.cmake
+[0.600s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/rosidl_cmake-extras.cmake
+[0.600s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.600s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.601s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[0.601s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/ament_cmake_export_targets-extras.cmake
+[0.601s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.601s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.601s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interfaceConfig.cmake
+[0.601s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake/dynorb_interfaceConfig-version.cmake
+[0.601s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/package.xml
+[0.607s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb_interface

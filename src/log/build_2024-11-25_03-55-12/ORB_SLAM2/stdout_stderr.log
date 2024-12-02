@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target ORB_SLAM2[0m
+[ 62%] Built target ORB_SLAM2
+[35m[1mConsolidate compiler generated dependencies of target rgbd_tum[0m
+[35m[1mConsolidate compiler generated dependencies of target stereo_kitti[0m
+[ 68%] Built target stereo_kitti
+[ 75%] Built target rgbd_tum
+[35m[1mConsolidate compiler generated dependencies of target mono_tum[0m
+[35m[1mConsolidate compiler generated dependencies of target stereo_euroc[0m
+[ 81%] Built target stereo_euroc
+[ 87%] Built target mono_tum
+[35m[1mConsolidate compiler generated dependencies of target mono_kitti[0m
+[35m[1mConsolidate compiler generated dependencies of target mono_euroc[0m
+[ 93%] Built target mono_kitti
+[100%] Built target mono_euroc

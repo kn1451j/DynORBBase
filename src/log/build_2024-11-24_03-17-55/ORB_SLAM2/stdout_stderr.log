@@ -1,0 +1,7 @@
+[ 62%] Built target ORB_SLAM2
+[ 68%] Built target rgbd_tum
+[ 75%] Built target stereo_kitti
+[ 81%] Built target stereo_euroc
+[ 87%] Built target mono_tum
+[ 93%] Built target mono_kitti
+[100%] Built target mono_euroc

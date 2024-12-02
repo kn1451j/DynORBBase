@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000158] (-) JobUnselected: {'identifier': 'ORB_SLAM2'}
+[0.000243] (-) JobUnselected: {'identifier': 'dynorb_interface'}
+[0.000312] (-) JobUnselected: {'identifier': 'sam_tracking'}
+[0.000406] (-) EventReactorShutdown: {}

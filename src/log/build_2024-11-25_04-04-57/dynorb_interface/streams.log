@@ -1,0 +1,23 @@
+[0.006s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb_interface -- -j2 -l2
+[0.056s] [  5%] Built target dynorb_interface__cpp
+[0.057s] [ 12%] Built target dynorb_interface__rosidl_generator_c
+[0.082s] [ 23%] Built target dynorb_interface__rosidl_typesupport_cpp
+[0.090s] [ 23%] Built target ament_cmake_python_copy_dynorb_interface
+[0.115s] [ 33%] Built target dynorb_interface__rosidl_typesupport_fastrtps_cpp
+[0.132s] [ 43%] Built target dynorb_interface__rosidl_typesupport_introspection_c
+[0.133s] [ 53%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c
+[0.154s] [ 64%] Built target dynorb_interface__rosidl_typesupport_introspection_cpp
+[0.160s] [ 74%] Built target dynorb_interface__rosidl_typesupport_c
+[0.176s] [ 74%] Built target dynorb_interface
+[0.207s] [ 76%] Built target dynorb_interface__py
+[0.231s] [ 84%] Built target dynorb_interface__rosidl_generator_py
+[0.249s] [ 89%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.262s] [ 94%] Built target dynorb_interface__rosidl_typesupport_introspection_c__pyext
+[0.277s] [100%] Built target dynorb_interface__rosidl_typesupport_c__pyext
+[0.357s] running egg_info
+[0.358s] writing dynorb_interface.egg-info/PKG-INFO
+[0.358s] writing dependency_links to dynorb_interface.egg-info/dependency_links.txt
+[0.359s] writing top-level names to dynorb_interface.egg-info/top_level.txt
+[0.361s] reading manifest file 'dynorb_interface.egg-info/SOURCES.txt'
+[0.362s] writing manifest file 'dynorb_interface.egg-info/SOURCES.txt'
+[0.380s] [100%] Built target ament_cmake_python_build_dynorb_interface_egg

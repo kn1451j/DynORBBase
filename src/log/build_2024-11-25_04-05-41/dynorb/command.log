@@ -1,0 +1,6 @@
+Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/parallels/DynORBBase/src/dynorb -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/dynorb
+Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/parallels/DynORBBase/src/dynorb -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/dynorb
+Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb
+Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb

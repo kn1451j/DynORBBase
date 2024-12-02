@@ -1,0 +1,24 @@
+[0.017s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb_interface -- -j2 -l2
+[0.080s] [  2%] Built target dynorb_interface__cpp
+[0.101s] [ 12%] Built target dynorb_interface__rosidl_generator_c
+[0.134s] [ 23%] Built target dynorb_interface__rosidl_typesupport_cpp
+[0.138s] [ 23%] Built target ament_cmake_python_copy_dynorb_interface
+[0.219s] [ 33%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c
+[0.230s] [ 43%] Built target dynorb_interface__rosidl_typesupport_fastrtps_cpp
+[0.369s] [ 53%] Built target dynorb_interface__rosidl_typesupport_introspection_c
+[0.390s] [ 64%] Built target dynorb_interface__rosidl_typesupport_c
+[0.477s] [ 74%] Built target dynorb_interface__rosidl_typesupport_introspection_cpp
+[0.588s] [ 74%] Built target dynorb_interface
+[0.701s] [ 76%] Built target dynorb_interface__py
+[0.722s] [ 84%] Built target dynorb_interface__rosidl_generator_py
+[0.764s] [ 89%] Built target dynorb_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.783s] [ 94%] Built target dynorb_interface__rosidl_typesupport_introspection_c__pyext
+[0.802s] [100%] Built target dynorb_interface__rosidl_typesupport_c__pyext
+[0.972s] running egg_info
+[0.972s] writing dynorb_interface.egg-info/PKG-INFO
+[0.972s] writing dependency_links to dynorb_interface.egg-info/dependency_links.txt
+[0.973s] writing top-level names to dynorb_interface.egg-info/top_level.txt
+[0.974s] reading manifest file 'dynorb_interface.egg-info/SOURCES.txt'
+[0.975s] writing manifest file 'dynorb_interface.egg-info/SOURCES.txt'
+[1.002s] [100%] Built target ament_cmake_python_build_dynorb_interface_egg
+[1.017s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb_interface -- -j2 -l2

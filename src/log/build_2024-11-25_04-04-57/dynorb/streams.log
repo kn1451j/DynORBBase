@@ -1,0 +1,39 @@
+[0.013s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/parallels/DynORBBase/src/dynorb -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/dynorb
+[0.030s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.151s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.201s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:41 (if):
+[0.201s]   Policy CMP0057 is not set: Support new IN_LIST if() operator.  Run "cmake
+[0.201s]   --help-policy CMP0057" for policy details.  Use the cmake_policy command to
+[0.201s]   set the policy and suppress this warning.
+[0.201s] 
+[0.202s]   IN_LIST will be interpreted as an operator when the policy is set to NEW.
+[0.202s]   Since the policy is not set the OLD behavior will be used.
+[0.202s] Call Stack (most recent call first):
+[0.202s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[0.202s]   CMakeLists.txt:25 (ament_package)
+[0.202s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.202s] [0m
+[0.202s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:41 (if):
+[0.202s]   if given arguments:
+[0.202s] 
+[0.202s]     "ament_cmake_core" "IN_LIST" "_ARG_AMENT_EXECUTE_EXTENSIONS_EXCLUDE"
+[0.202s] 
+[0.202s]   Unknown arguments specified
+[0.202s] Call Stack (most recent call first):
+[0.202s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[0.202s]   CMakeLists.txt:25 (ament_package)
+[0.202s] 
+[0.203s] [0m
+[0.203s] [31mCMake Error in CMakeLists.txt:
+[0.203s]   No cmake_minimum_required command is present.  A line of code such as
+[0.203s] 
+[0.203s]     cmake_minimum_required(VERSION 3.22)
+[0.203s] 
+[0.203s]   should be added at the top of the file.  The version specified may be lower
+[0.203s]   if you wish to support older CMake versions for this project.  For more
+[0.203s]   information run "cmake --help-policy CMP0000".
+[0.203s] 
+[0.203s] [0m
+[0.208s] -- Configuring incomplete, errors occurred!
+[0.208s] See also "/home/parallels/DynORBBase/src/build/dynorb/CMakeFiles/CMakeOutput.log".
+[0.214s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/parallels/DynORBBase/src/dynorb -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/dynorb

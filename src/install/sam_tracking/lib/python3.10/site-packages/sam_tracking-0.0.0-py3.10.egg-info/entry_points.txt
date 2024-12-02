@@ -1,0 +1,3 @@
+[console_scripts]
+tracker = sam_tracking.tracker:main
+

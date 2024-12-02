@@ -1,0 +1,34 @@
+[0.014s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target dynorb[0m
+[0.117s] [ 62%] Built target dynorb
+[0.138s] [35m[1mConsolidate compiler generated dependencies of target stereo_kitti[0m
+[0.140s] [35m[1mConsolidate compiler generated dependencies of target rgbd_tum[0m
+[0.157s] [ 68%] Built target rgbd_tum
+[0.164s] [ 75%] Built target stereo_kitti
+[0.171s] [35m[1mConsolidate compiler generated dependencies of target stereo_euroc[0m
+[0.188s] [35m[1mConsolidate compiler generated dependencies of target mono_tum[0m
+[0.202s] [ 81%] Built target stereo_euroc
+[0.218s] [35m[1mConsolidate compiler generated dependencies of target mono_kitti[0m
+[0.223s] [ 87%] Built target mono_tum
+[0.239s] [35m[1mConsolidate compiler generated dependencies of target mono_euroc[0m
+[0.247s] [ 93%] Built target mono_kitti
+[0.272s] [100%] Built target mono_euroc
+[0.299s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+[0.386s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb
+[0.394s] -- Install configuration: "Release"
+[0.394s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/ament_index/resource_index/package_run_dependencies/dynorb
+[0.394s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/ament_index/resource_index/parent_prefix_path/dynorb
+[0.394s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/environment/ament_prefix_path.sh
+[0.394s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/environment/ament_prefix_path.dsv
+[0.394s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/environment/path.sh
+[0.394s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/environment/path.dsv
+[0.394s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/local_setup.bash
+[0.398s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/local_setup.sh
+[0.398s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/local_setup.zsh
+[0.398s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/local_setup.dsv
+[0.398s] -- Installing: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.dsv
+[0.398s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/ament_index/resource_index/packages/dynorb
+[0.398s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/cmake/dynorbConfig.cmake
+[0.398s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/cmake/dynorbConfig-version.cmake
+[0.398s] -- Up-to-date: /home/parallels/DynORBBase/src/install/dynorb/share/dynorb/package.xml
+[0.403s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/build/dynorb

@@ -1,0 +1,24 @@
+[0.020s] Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2
+[0.116s] [35m[1mConsolidate compiler generated dependencies of target dynorb[0m
+[0.159s] [  3%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/System.cc.o[0m
+[0.159s] [  6%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/Tracking.cc.o[0m
+[0.895s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:38[m[K,
+[0.895s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23[m[K:
+[0.895s] [01m[K/home/parallels/DynORBBase/src/dynorb/include/DynamObjTracker.h:6:10:[m[K [01;31m[Kfatal error: [m[Kdynorb_interface/srv/dyn_class.srv: No such file or directory
+[0.895s]     6 | #include [01;31m[K"dynorb_interface/srv/dyn_class.srv"[m[K
+[0.895s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.895s] compilation terminated.
+[0.895s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:38[m[K,
+[0.895s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:28[m[K,
+[0.895s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[0.895s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Tracking.cc:22[m[K:
+[0.895s] [01m[K/home/parallels/DynORBBase/src/dynorb/include/DynamObjTracker.h:6:10:[m[K [01;31m[Kfatal error: [m[Kdynorb_interface/srv/dyn_class.srv: No such file or directory
+[0.895s]     6 | #include [01;31m[K"dynorb_interface/srv/dyn_class.srv"[m[K
+[0.895s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.895s] compilation terminated.
+[0.905s] gmake[2]: *** [CMakeFiles/dynorb.dir/build.make:90: CMakeFiles/dynorb.dir/src/Tracking.cc.o] Error 1
+[0.905s] gmake[2]: *** Waiting for unfinished jobs....
+[0.908s] gmake[2]: *** [CMakeFiles/dynorb.dir/build.make:76: CMakeFiles/dynorb.dir/src/System.cc.o] Error 1
+[0.908s] gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/dynorb.dir/all] Error 2
+[0.909s] gmake: *** [Makefile:146: all] Error 2
+[0.911s] Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/build/dynorb -- -j2 -l2

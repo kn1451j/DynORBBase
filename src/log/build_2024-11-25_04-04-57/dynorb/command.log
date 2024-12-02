@@ -1,0 +1,2 @@
+Invoking command in '/home/parallels/DynORBBase/src/build/dynorb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/parallels/DynORBBase/src/dynorb -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/dynorb
+Invoked command in '/home/parallels/DynORBBase/src/build/dynorb' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/parallels/DynORBBase/src/dynorb -DCMAKE_INSTALL_PREFIX=/home/parallels/DynORBBase/src/install/dynorb
