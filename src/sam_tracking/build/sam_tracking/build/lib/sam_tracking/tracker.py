@@ -82,7 +82,7 @@ class SAMTracker(Node):
                 object_mask = np.round(object_mask).astype(np.int32)
                 masks.append(object_mask)
 
-        self.get_logger().info(masks)
+        print(masks)
         return masks, result
 
     def _prepare_data(
@@ -125,7 +125,7 @@ class SAMTracker(Node):
 
         self.get_logger().info("segmenting")
         masks_, result = self._get_dynamic_segmentation(im_tensor)
-        self.get_logger().info(result)
+        print(result)
         return masks_
 
     def _get_feature(self, img, batch_size):
@@ -247,6 +247,7 @@ class SAMTracker(Node):
     def process_frame(self, request, response):
         self.get_logger().info('Recieved frame request')
         cv_img = self.cv_bridge.imgmsg_to_cv2(request.frame)
+        print(cv_img)
         # im = Image.fromarray(np.uint8(cv_img)).convert("MONO8")
         img, w, h = self._prepare_data(cv_img)
 

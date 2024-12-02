@@ -3,8 +3,9 @@ from rclpy.node import Node
 import os, sys, csv
 import cv2
 import torch
+import torchvision
 import numpy as np
-from PIL import Image
+from PIL import Image as PImage
 import matplotlib.pyplot as plt
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
@@ -13,7 +14,7 @@ import cv2
 sys.path.append(os.path.abspath("/home/parallels/sam2")) ### CHANGE DEPENDING ON LOCAL LOCATION
 
 from torchvision import transforms
-from torchvision.models.detection import maskrcnn_resnet50_fpn, MaskRCNN_ResNet50_FPN_Weights
+from torchvision.models.detection import maskrcnn_resnet50_fpn
 from datetime import datetime
 from sam2.build_sam import build_sam2_video_predictor
 from matplotlib.patches import Rectangle
@@ -30,7 +31,7 @@ class SAMTracker(Node):
         # torch.autocast(device_type="cuda", dtype=torch.bfloat16).__enter__()
         self.coredir = "/home/parallels/sam2"   ### CHANGE DEPENDING ON LOCAL LOCATION
 
-        self.model = maskrcnn_resnet50_fpn(weights=MaskRCNN_ResNet50_FPN_Weights.COCO_V1)
+        self.model = maskrcnn_resnet50_fpn(pretrained=True)
         self.model.eval()  # Set to evaluation mode
 
         self.device = torch.device("cpu")
@@ -43,11 +44,10 @@ class SAMTracker(Node):
         self.current_frame_mask = None
 
         self.process_frame_srv = self.create_service(FeedFrame, 'feed_frame', self.process_frame)
-        # self.get_class_srv = self.create_service(DynClass, 'get_class', self.get_class)
         self.mask_publisher = self.create_publisher(Image, "mask_seg", 4)
         self.cv_bridge = CvBridge()
 
-        with open("./sam_tracking/coco-labels-paper.txt", 'r') as file:   ### REMEMBER TO COPY TXT INTO SAM2 DIR
+        with open("./src/sam_tracking/coco-labels-paper.txt", 'r') as file:   ### REMEMBER TO COPY TXT INTO SAM2 DIR
             # Read all lines and strip newlines, then store each line as an element in a list
             lines = file.readlines()
 
@@ -64,26 +64,28 @@ class SAMTracker(Node):
         """
         masks = []
         # Run inference on the image
-        self.get_logger().info("running inference")
+        self.get_logger().info("Running inference")
+        print(image.shape)
         with torch.no_grad():
             prediction = self.model(image)
 
-        self.get_logger().info("processing inference")
+        self.get_logger().info("Processing inference")
         # Process the results
         result = prediction[0]  # Get the first (and only) image result
         for i, class_id in enumerate(result['labels']):
             class_name = self.class_names[class_id.item()]
+            print(class_name)
 
             # Check if the class is in the list of dynamic objects we care about
             dynamic_classes = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck',
-                                'boat']
+                                'boat', 'laptop']
+            #pick one thing to segment(idx=0) for now
             if class_name in dynamic_classes and result["scores"][i] > .9:
-                object_mask = result['masks'][i, 0].cpu().numpy()
-                object_mask = np.round(object_mask).astype(np.int32)
+                object_mask = result['masks'][i, 0]
+                object_mask = torch.round(object_mask).to(torch.int32)
                 masks.append(object_mask)
 
-        self.get_logger().info(masks)
-        return masks, result
+        return torch.stack(masks, dim=0), result
 
     def _prepare_data(
             self,
@@ -112,47 +114,15 @@ class SAMTracker(Node):
         img /= img_std
         return img, width, height
 
-    def _coco_mask(self, im):
+    def _get_coco_masks(self, im):
         """
         Input an image and receive a list of masks that belong to high scoring dynamic objects
         """
-        # Load the input image
-        # im = Image.open(image_path).convert("RGB")
-        # im = Image.fromarray(np.uint8(im))
-        # Define the transformations for the input
-        # transform = transforms.Compose([transforms.ToTensor()])
-        im_tensor = im.unsqueeze(0)  # Add batch dimension
+        transform = transforms.Compose([transforms.ToTensor()])
+        im_tensor = transform(im).unsqueeze(0)  # Add batch dimension
+        masks, result = self._get_dynamic_segmentation(im_tensor)
 
-        self.get_logger().info("segmenting")
-        masks_, result = self._get_dynamic_segmentation(im_tensor)
-        self.get_logger().info(result)
-        return masks_
-
-    def _get_feature(self, img, batch_size):
-        """
-        Feature calling for mask_step function
-        """
-        if self.device == torch.device("cuda"):
-            image = img.cuda().float().unsqueeze(0)
-        else:
-            image = img.cpu().float().unsqueeze(0)
-        backbone_out = self.predictor.forward_image(image)
-        expanded_image = image.expand(batch_size, -1, -1, -1)
-        expanded_backbone_out = {
-            "backbone_fpn": backbone_out["backbone_fpn"].copy(),
-            "vision_pos_enc": backbone_out["vision_pos_enc"].copy(),
-        }
-        for i, feat in enumerate(expanded_backbone_out["backbone_fpn"]):
-            expanded_backbone_out["backbone_fpn"][i] = feat.expand(
-                batch_size, -1, -1, -1
-            )
-        for i, pos in enumerate(expanded_backbone_out["vision_pos_enc"]):
-            pos = pos.expand(batch_size, -1, -1, -1)
-            expanded_backbone_out["vision_pos_enc"][i] = pos
-
-        features = self.predictor._prepare_backbone_features(expanded_backbone_out)
-        features = (expanded_image,) + features
-        return features
+        return masks
 
     def _get_orig_video_res_output(self, any_res_masks):
         """
@@ -229,10 +199,8 @@ class SAMTracker(Node):
         self.frame_idx = 0  # the frame index we interact with
         self.obj_count = 0  # give a unique id to each object we interact with (it can be any integers)
 
-        self._calculate_masks(frame)
-
-    def _calculate_masks(self, frame):
-        masks = self._coco_mask(frame)
+    def _calculate_initial_masks(self, frame):
+        masks = self._get_coco_masks(frame)
         for m in masks:
             mask = np.array(m, dtype=np.float32)
             _, out_obj_ids, out_mask_logits = self.predictor.add_new_mask(
@@ -242,10 +210,31 @@ class SAMTracker(Node):
                 mask=mask,
             )
             self.obj_count += 1
+
+        resized_masks = torchvision.transforms.functional.resize(
+				masks,
+				size=(self.inference_state["video_height"], self.inference_state["video_width"])
+			)
+        
+        # result_masks = self.combine_masks(resized_masks)
+
+        result_mask = np.full((self.inference_state["video_height"], self.inference_state["video_width"]), fill_value=255, dtype=np.uint8)  # Copy original image
+        for mask in resized_masks:
+            m = (mask > 0.0).cpu().numpy().astype(np.bool_)
+            result_mask[m == 1] = 1  # Add the red mask on top
+        
+        #visualize
+        v_image = self.cv_bridge.cv2_to_imgmsg(result_mask, encoding='mono8')
+        #publish the dynamic masks
+        self.mask_publisher.publish(v_image)
+        self.get_logger().info('Processed initial masks')
+
+        return result_mask
     
     # TODO add conditional mask adding
     def process_frame(self, request, response):
         self.get_logger().info('Recieved frame request')
+        print(request.frame.encoding)
         cv_img = self.cv_bridge.imgmsg_to_cv2(request.frame)
         # im = Image.fromarray(np.uint8(cv_img)).convert("MONO8")
         img, w, h = self._prepare_data(cv_img)
@@ -253,19 +242,55 @@ class SAMTracker(Node):
         #just initialize and return the number of dynamic objects
         if self.frame_idx<0:
             self._init_tracker(img, h, w)
-            response.count = self.obj_count
+            masks = self._calculate_initial_masks(cv_img)
+            v_image = self.cv_bridge.cv2_to_imgmsg(masks, encoding='mono8')
+            response.seg = v_image
             return response
         
+        self.get_logger().info(f'Found {self.obj_count} dynamic objects')
+        result_mask = np.full((self.inference_state["video_height"], self.inference_state["video_width"]), fill_value=255, dtype=np.uint8)  # Copy original image
+
+        if(self.obj_count==0):
+            #nothing to track, just return the result mask immediately
+            v_image = self.cv_bridge.cv2_to_imgmsg(result_mask, encoding='mono8')
+
+            #publish the dynamic masks
+            self.mask_publisher.publish(v_image)
+            
+            response.seg = v_image
+            self.get_logger().info('Responding to frame request')
+
+            return response
+
         #otherwise, we're gonna add the frame
         self.frame_idx+=1
-        self.inference_state["images"] = self.inference_state["images"].append(request.frame)
-        self.inference_state["num_frames"] = self.frame_idx
+        self.inference_state["images"].append(img)
+        self.inference_state["num_frames"] = self.frame_idx+1
 
-        #process the next frame
-        masks = self._mask_step(img)
+        *_, results = self.predictor.propagate_in_video(
+        self.inference_state,
+        start_frame_idx=self.frame_idx-1,
+        max_frame_num_to_track=self.frame_idx,
+        reverse=False,
+        )
 
-        #convert to ROS msg
-        v_image = self.cv_bridge.imgmsg_to_cv2(masks, desired_encoding="mono8")
+        out_frame_idx, out_obj_ids, out_mask_logits = results
+
+        logits = torch.nn.functional.interpolate(
+				out_mask_logits,
+				size=(self.inference_state["video_height"], self.inference_state["video_width"])
+			)
+
+        for mask in logits:
+            m = (mask > 0.0).permute(1, 2, 0).cpu().numpy().astype(np.bool_)
+            m = m[:, :, 0]  # Drop the third dimension if the mask is (height, width, 1)
+            result_mask[m == 1] = 1  # Add the red mask on top
+        
+        v_image = self.cv_bridge.cv2_to_imgmsg(result_mask, encoding='mono8')
+
+        #publish the dynamic masks
+        self.mask_publisher.publish(v_image)
+        
         response.seg = v_image
         self.get_logger().info('Responding to frame request')
 
@@ -286,7 +311,7 @@ class SAMTracker(Node):
             current_vision_feats,
             current_vision_pos_embeds,
             feat_sizes,
-        ) = self._get_feature(img, batch_size)
+        ) = self.predictor._get_image_feature(self.inference_state, self.frame_idx, batch_size)
 
         current_out = self.predictor.track_step(
             frame_idx=self.frame_idx,
@@ -302,25 +327,11 @@ class SAMTracker(Node):
             run_mem_encoder=True,
             prev_sam_mask_logits=None,
         )
+
         pred_masks_gpu = current_out["pred_masks"]
-        _, self.current_frame_mask = self._get_orig_video_res_output(pred_masks_gpu)
+        _, masks = self._get_orig_video_res_output(pred_masks_gpu)
 
-        # visualize the masks
-        mask_combined = np.full((self.inference_state["video_height"], self.inference_state["video_width"]), fill_value=-1)  # Copy original image
-        for mask in self.current_frame_mask:
-            m = (mask > 0.0).permute(1, 2, 0).cpu().numpy().astype(np.bool_)
-            if m.ndim == 3:
-                m = m[:, :, 0]  # Drop the third dimension if the mask is (height, width, 1)
-            mask_combined[m == 1] = 1  # Add the red mask on top
-            v_image = self.cv_bridge.imgmsg_to_cv2(mask, desired_encoding='passthrough')
-            self.mask_publisher.publish(v_image)
-        self.get_logger().info('Processed masks')
-        return mask_combined
-
-    # def get_class(self, request, response):
-    #     print(self.current_frame_mask)
-    #     response.cat = self.current_frame_mask[request.x][request.y]
-    #     return response
+        return masks
 
 def main():
     rclpy.init()
