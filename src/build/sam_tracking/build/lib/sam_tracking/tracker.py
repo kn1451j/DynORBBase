@@ -43,7 +43,7 @@ class SAMTracker(Node):
         self.current_frame_mask = None
 
         self.process_frame_srv = self.create_service(FeedFrame, 'feed_frame', self.process_frame)
-        # self.get_class_srv = self.create_service(DynClass, 'get_class', self.get_class)
+        # # self.get_class_srv = self.create_service(DynClass, 'get_class', self.get_class)
         self.mask_publisher = self.create_publisher(Image, "mask_seg", 4)
         self.cv_bridge = CvBridge()
 
@@ -64,9 +64,13 @@ class SAMTracker(Node):
         """
         masks = []
         # Run inference on the image
+        self.get_logger().info("running inference")
         with torch.no_grad():
             prediction = self.model(image)
 
+        print(prediction)
+
+        self.get_logger().info("processing inference")
         # Process the results
         result = prediction[0]  # Get the first (and only) image result
         for i, class_id in enumerate(result['labels']):
@@ -80,6 +84,7 @@ class SAMTracker(Node):
                 object_mask = np.round(object_mask).astype(np.int32)
                 masks.append(object_mask)
 
+        print(masks)
         return masks, result
 
     def _prepare_data(
@@ -117,22 +122,28 @@ class SAMTracker(Node):
         # im = Image.open(image_path).convert("RGB")
         # im = Image.fromarray(np.uint8(im))
         # Define the transformations for the input
-        transform = transforms.Compose([transforms.ToTensor()])
-        im_tensor = transform(im).unsqueeze(0)  # Add batch dimension
+        # transform = transforms.Compose([transforms.ToTensor()])
+        im_tensor = im.unsqueeze(0)  # Add batch dimension
 
-        masks_, result = self._get_dynamic_segmentation(im_tensor)
+        self.get_logger().info("segmenting")
+        masks, result = self._get_dynamic_segmentation(im_tensor)
         print(result)
-        return masks_
+        print(masks)
+        return masks
 
     def _get_feature(self, img, batch_size):
         """
         Feature calling for mask_step function
         """
+        print("_get_feature")
+        print(img)
         if self.device == torch.device("cuda"):
             image = img.cuda().float().unsqueeze(0)
         else:
             image = img.cpu().float().unsqueeze(0)
         backbone_out = self.predictor.forward_image(image)
+        print("backbone out")
+        print(backbone_out)
         expanded_image = image.expand(batch_size, -1, -1, -1)
         expanded_backbone_out = {
             "backbone_fpn": backbone_out["backbone_fpn"].copy(),
@@ -148,6 +159,8 @@ class SAMTracker(Node):
 
         features = self.predictor._prepare_backbone_features(expanded_backbone_out)
         features = (expanded_image,) + features
+        print("features")
+        print(features)
         return features
 
     def _get_orig_video_res_output(self, any_res_masks):
@@ -225,10 +238,11 @@ class SAMTracker(Node):
         self.frame_idx = 0  # the frame index we interact with
         self.obj_count = 0  # give a unique id to each object we interact with (it can be any integers)
 
-        self._calculate_masks(frame)
+        return self._calculate_masks(frame)
 
     def _calculate_masks(self, frame):
         masks = self._coco_mask(frame)
+        print(masks)
         for m in masks:
             mask = np.array(m, dtype=np.float32)
             _, out_obj_ids, out_mask_logits = self.predictor.add_new_mask(
@@ -238,30 +252,64 @@ class SAMTracker(Node):
                 mask=mask,
             )
             self.obj_count += 1
+
+        #just add random point for now TODO remove
+        _, out_obj_ids, out_mask_logits = self.predictor.add_new_mask(
+            inference_state=self.inference_state,
+            frame_idx=self.frame_idx,
+            obj_id=self.obj_count,
+            mask=[[1]],
+        )
+        
+        return self.combine_masks(masks)
     
     # TODO add conditional mask adding
     def process_frame(self, request, response):
         self.get_logger().info('Recieved frame request')
         cv_img = self.cv_bridge.imgmsg_to_cv2(request.frame)
+        print(cv_img)
         # im = Image.fromarray(np.uint8(cv_img)).convert("MONO8")
         img, w, h = self._prepare_data(cv_img)
 
+        print("prepared img")
+        print(img)
+
         #just initialize and return the number of dynamic objects
         if self.frame_idx<0:
-            self._init_tracker(img, h, w)
-            response.count = self.obj_count
+            masks = self._init_tracker(img, h, w)
+            v_image = self.cv_bridge.cv2_to_imgmsg(masks, encoding='mono8')
+            response.seg = v_image
             return response
         
         #otherwise, we're gonna add the frame
         self.frame_idx+=1
-        self.inference_state["images"] = self.inference_state["images"].append(request.frame)
-        self.inference_state["num_frames"] = self.frame_idx
+        self.inference_state["images"].append(img)
+        self.inference_state["num_frames"] = self.frame_idx+1
+        self.predictor.propagate_in_video_preflight(self.inference_state)
+
+        print("mask step")
+
+        print(img)
+
+        *_, results = self.predictor.propagate_in_video(
+        self.inference_state,
+        start_frame_idx=self.frame_idx-1,
+        max_frame_num_to_track=self.frame_idx,
+        reverse=False,
+        )
+
+        out_frame_idx, out_obj_ids, out_mask_logits = results
+
+        masks = self.combine_masks(out_mask_logits)
 
         #process the next frame
-        masks = self._mask_step(img)
+        # masks = self._mask_step(img)
+        
+        print("makss")
+        print(masks)
 
         #convert to ROS msg
-        v_image = self.cv_bridge.imgmsg_to_cv2(masks, desired_encoding="mono8")
+        v_image = self.cv_bridge.cv2_to_imgmsg(masks, encoding='mono8')
         response.seg = v_image
         self.get_logger().info('Responding to frame request')
 
@@ -275,6 +323,8 @@ class SAMTracker(Node):
         output_dict = self.inference_state["output_dict"]
         batch_size = len(self.inference_state["obj_idx_to_id"])
 
+        print("mask step")
+
         # # Retrieve correct image features
         (
             _,
@@ -282,7 +332,9 @@ class SAMTracker(Node):
             current_vision_feats,
             current_vision_pos_embeds,
             feat_sizes,
-        ) = self._get_feature(img, batch_size)
+        ) = self.predictor._get_image_feature(self.inference_state, self.frame_idx, batch_size)
+
+        print(current_vision_feats)
 
         current_out = self.predictor.track_step(
             frame_idx=self.frame_idx,
@@ -298,18 +350,25 @@ class SAMTracker(Node):
             run_mem_encoder=True,
             prev_sam_mask_logits=None,
         )
-        pred_masks_gpu = current_out["pred_masks"]
-        _, self.current_frame_mask = self._get_orig_video_res_output(pred_masks_gpu)
 
+        print(current_out)
+
+        pred_masks_gpu = current_out["pred_masks"]
+        _, masks = self._get_orig_video_res_output(pred_masks_gpu)
+
+        # self.current_frame_masks = masks
+        return masks
+
+    def combine_masks(self, masks):
         # visualize the masks
-        mask_combined = np.full((self.inference_state["video_height"], self.inference_state["video_width"]), fill_value=-1)  # Copy original image
-        for mask in self.current_frame_mask:
+        mask_combined = np.full((self.inference_state["video_height"], self.inference_state["video_width"]), fill_value=255, dtype=np.uint8)  # Copy original image
+        for mask in masks:
             m = (mask > 0.0).permute(1, 2, 0).cpu().numpy().astype(np.bool_)
             if m.ndim == 3:
                 m = m[:, :, 0]  # Drop the third dimension if the mask is (height, width, 1)
             mask_combined[m == 1] = 1  # Add the red mask on top
-            v_image = self.cv_bridge.imgmsg_to_cv2(mask, desired_encoding='passthrough')
-            self.mask_publisher.publish(v_image)
+        v_image = self.cv_bridge.cv2_to_imgmsg(mask_combined, encoding='mono8')
+        self.mask_publisher.publish(v_image)
         self.get_logger().info('Processed masks')
         return mask_combined
 
@@ -322,6 +381,12 @@ def main():
     rclpy.init()
 
     minimal_service = SAMTracker()
+    # p = FeedFrame.Request()
+    # p.frame = Image(data=[255,0,0,255,0,0,255,0,0], step=3, width=3, height=1, encoding='rgb8')
+    # x = FeedFrame.Response()
+
+    # minimal_service.process_frame(p, x)
+    # minimal_service.process_frame(p, x)
 
     rclpy.spin(minimal_service)
 
